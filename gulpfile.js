@@ -28,7 +28,7 @@ gulp.task('_build-font', ['_clean'], function () {
         .pipe(consolidate('lodash', {
           glyphs: codepoints,
           fontName: 'cr0cK',
-          fontPath: '/fonts/',
+          fontPath: '../fonts/',
           className: 'icon'
         }))
         .pipe(rename('font.less'))

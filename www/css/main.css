@@ -752,8 +752,8 @@ nav a:hover {
 }
 @font-face {
   font-family: "cr0cK";
-  src: url('/fonts/cr0cK.eot');
-  src: url('/fonts/cr0cK.eot?#iefix') format('eot'), url('/fonts/cr0cK.woff') format('woff'), url('/fonts/cr0cK.ttf') format('truetype'), url('/fonts/cr0cK.svg#cr0cK') format('svg');
+  src: url('../fonts/cr0cK.eot');
+  src: url('../fonts/cr0cK.eot?#iefix') format('eot'), url('../fonts/cr0cK.woff') format('woff'), url('../fonts/cr0cK.ttf') format('truetype'), url('../fonts/cr0cK.svg#cr0cK') format('svg');
   font-weight: normal;
   font-style: normal;
 }
