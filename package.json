@@ -1,0 +1,26 @@
+{
+  "name": "cv",
+  "version": "1.0.0",
+  "description": "My CV.",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cr0cK/cv.git"
+  },
+  "author": "Alexis Mineaud",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cr0cK/cv/issues"
+  },
+  "homepage": "https://github.com/cr0cK/cv",
+  "devDependencies": {
+    "gulp": "^3.8.10",
+    "gulp-clean": "^0.3.1",
+    "gulp-less": "^1.3.6",
+    "gulp-minify-css": "^0.3.11",
+    "gulp-sourcemaps": "^1.2.8"
+  }
+}
