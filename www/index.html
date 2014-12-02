@@ -11,7 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" href="css/main.css">
-    <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+    <!-- <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'> -->
 
     <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
   </head>
@@ -23,6 +23,7 @@
     <div class="header-container">
       <header class="wrapper clearfix">
         <h1 class="title">Alexis Mineaud's Curriculum Vitae</h1>
+
         <!-- <nav>
           <ul>
             <li><a href="#">Expertises</a></li>
@@ -37,7 +38,8 @@
       <div class="main wrapper clearfix">
         <article>
           <section>
-            <h1>Who I Am.</h1>
+            <h1 id="whoiam">Who I Am.</h1>
+
             <p>
               My name is Alexis Mineaud. I'm 33 years old and and I'm developing since more than 10 years. I mainly work with web technologies but during my studies, I instead used low-level languages such as C, C++.<br/><br/>
 
@@ -48,7 +50,7 @@
 
               Do not hesitate to contact me if you are interested in my profile, I remain open to opportunities...
 
-              <h2>Stuff I'm used to play with:</h2>
+              <h2 id="stuff">Stuff I'm used to play with:</h2>
 
               <h4>Javascript:</h4>
               <ul>
@@ -124,7 +126,7 @@
                 <li>Android native development</li>
               </ul>
 
-              <h2>Carrer</h2>
+              <h2 id="carrer">Carrer</h2>
 
               <ul>
                 <li>
@@ -160,7 +162,7 @@
                 </li>
               </ul>
 
-              <h2>Education</h2>
+              <h2 id="education">Education</h2>
 
               <ul>
                 <li>2005: Master of computer sciences</li>
@@ -172,7 +174,9 @@
         <aside class="summary">
           <h2>Summary</h2>
 
-          <h4>Who I Am.</h4>
+          <img class="avatar" src="img/moi.jpg">
+
+          <h4><a href="javascript:void(0)" onclick="scrollTo('#whoiam');">Who I Am.</a></h4>
           <ul>
             <li>Alexis Mineaud</li>
             <li>33 years old</li>
@@ -180,7 +184,7 @@
             <li>I <span class="icon small icon-heart"></span>Javascript</li>
           </ul>
 
-          <h4>Stuff</h4>
+          <h4><a href="javascript:void(0)" onclick="scrollTo('#stuff');">Stuff</a></h4>
           <ul>
             <li>AngularJS, ReactJS, jQuery, node.js</li>
             <li>Python</li>
@@ -189,13 +193,13 @@
             <li>HTML5, CSS3, SVG, Canvas&#8230;</li>
           </ul>
 
-          <h4>Carrer</h4>
+          <h4><a href="javascript:void(0)" onclick="scrollTo('#carrer');">Carrer</a></h4>
           <ul>
             <li>Since 2008: Gandi SAS</li>
             <li>2005-2008: Cerealog</li>
           </ul>
 
-          <h4>Education</h4>
+          <h4><a href="javascript:void(0)" onclick="scrollTo('#education');">Education</a></h4>
           <ul>
             <li>Master of computer sciences<br/>(3IL Limoges, France)</li>
             <li>BTS Industrial computing</li>
@@ -209,7 +213,6 @@
             <li><span class="icon icon-download"></span><a href="#">Get the PDF version</a></li>
           </ul>
         </aside>
-
       </div>
     </div>
 
@@ -219,7 +222,7 @@
       </footer>
     </div>
 
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/vendor/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
 
     <script src="js/main.js"></script>
