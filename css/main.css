@@ -790,14 +790,20 @@ nav a:hover {
 .icon-download:before {
   content: "\E001";
 }
-.icon-github:before {
+.icon-email:before {
   content: "\E002";
 }
-.icon-linkedin:before {
+.icon-github:before {
   content: "\E003";
 }
-.icon-twitter:before {
+.icon-heart:before {
   content: "\E004";
+}
+.icon-linkedin:before {
+  content: "\E005";
+}
+.icon-twitter:before {
+  content: "\E006";
 }
 * {
   font-family: 'Raleway', sans-serif;
@@ -812,6 +818,10 @@ aside.summary span.icon {
   font-size: 1.3rem;
   vertical-align: middle;
   padding-right: 5px;
+}
+aside.summary span.icon.small {
+  font-size: 1em;
+  padding-right: 2px;
 }
 aside.summary ul {
   padding-left: 20px;
