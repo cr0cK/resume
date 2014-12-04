@@ -857,9 +857,15 @@ header img.avatar {
   .no-print * {
     display: none !important;
   }
+  .no-desktop {
+    display: block !important;
+  }
   aside.summary {
     background: none;
   }
+}
+.no-desktop {
+  display: none;
 }
 
 /*# sourceMappingURL=maps/main.css.map */
