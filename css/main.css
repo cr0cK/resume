@@ -812,19 +812,20 @@ h2 {
   font-size: 1.4em;
 }
 a {
-  color: white;
+  color: black;
 }
-aside.summary {
-  position: relative;
-}
-aside.summary span.icon {
+span.icon {
   font-size: 1.3rem;
   vertical-align: middle;
   padding-right: 5px;
 }
-aside.summary span.icon.small {
+span.icon.small {
   font-size: 1em;
   padding-right: 2px;
+}
+ul.no-bullist {
+  list-style: none;
+  padding-left: 20px;
 }
 aside.summary ul {
   padding-left: 20px;
@@ -833,17 +834,32 @@ aside.summary ul.no-bullist {
   list-style: none;
   padding-left: 0px;
 }
-img.avatar {
+aside.summary a {
+  color: white;
+}
+header {
+  position: relative;
+}
+header img.avatar {
   position: absolute;
-  top: -40px;
-  right: -20px;
+  top: -7px;
+  right: 0px;
   margin: 5px;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   box-shadow: 0px 2px 10px #444;
+}
+@media print {
+  .no-print,
+  .no-print * {
+    display: none !important;
+  }
+  aside.summary {
+    background: none;
+  }
 }
 
 /*# sourceMappingURL=maps/main.css.map */
