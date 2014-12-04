@@ -7,23 +7,26 @@ h2 {
 }
 
 a {
-  color: white;
+  color: black;
+}
+
+span.icon {
+  font-size: 1.3rem;
+  vertical-align:  middle;
+  padding-right: 5px;
+
+  &.small {
+    font-size: 1em;
+    padding-right: 2px;
+  }
+}
+
+ul.no-bullist {
+  list-style: none;
+  padding-left: 20px;
 }
 
 aside.summary {
-  position: relative;
-
-  span.icon {
-    font-size: 1.3rem;
-    vertical-align:  middle;
-    padding-right: 5px;
-
-    &.small {
-      font-size: 1em;
-      padding-right: 2px;
-    }
-  }
-
   ul {
     padding-left: 20px;
 
@@ -32,17 +35,36 @@ aside.summary {
       padding-left: 0px;
     }
   }
+
+  a {
+    color: white;
+  }
 }
 
-img.avatar {
-  position: absolute;
-  top: -40px;
-  right: -20px;
-  margin: 5px;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  border-radius: 50%;
-  width: 100px;
-  height: 100px;
-  box-shadow: 0px 2px 10px #444;
+header {
+  position: relative;
+
+  img.avatar {
+    position: absolute;
+    top: -7px;
+    right: 0px;
+    margin: 5px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    box-shadow: 0px 2px 10px #444;
+  }
+}
+
+@media print {
+  .no-print, .no-print * {
+    display: none !important;
+  }
+
+  aside.summary {
+    background: none;
+
+  }
 }
