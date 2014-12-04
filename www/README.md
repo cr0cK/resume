@@ -1,6 +1,6 @@
 cv
 ==
 
-My Curriculum Vitae: http://alexis.mineaud.info
+My Curriculum Vitae: http://alexismineaud.info
 
 Feel free to contact me if you have some opportunities...
