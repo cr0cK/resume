@@ -24,8 +24,6 @@
       <header class="wrapper clearfix">
         <h1 class="title">Alexis Mineaud's Curriculum Vitae</h1>
 
-        <img class="no-print avatar" src="img/moi.jpg">
-
         <!-- <nav>
           <ul>
             <li><a href="#">Expertises</a></li>
@@ -40,9 +38,10 @@
       <div class="main wrapper clearfix">
         <article>
           <section>
-            <h1 id="whoiam" class="no-print">Who I Am.</h1>
+            <h2 id="whoiam" class="no-print">Who I Am.</h2>
 
             <p>
+              <img class="avatar" src="img/moi.jpg" />
               My name is Alexis Mineaud. I'm french, I'm 33 years old and I have about 10 years experience. I mainly work with web technologies but during my studies, I instead used low-level languages such as C, C++.
             </p>
 
@@ -64,6 +63,18 @@
           </section>
 
           <section>
+            <h2 id="introspection">Introspection</h2>
+
+            <p>I love to learn and challenge myself. I'm always looking for new ways to do to make it simpler and better. I love clean, small and powerful code.</p>
+
+            <p>But I know to be pragmatic when the situation requires it and not be too stubborn. I know question myself and I willingly accept criticism.</p>
+
+            <p>I'm not a natural leader but I know manage people if necessary. I like open and honest discussions, imagine things with people, share feelings, feel that people trust me and know I can count of them.</p>
+
+            <p>Note: My MBTI psychological type: <a href="http://en.wikipedia.org/wiki/INTJ">INTJ</a>.</p>
+          </section>
+
+          <section>
             <h2 id="stuff">Stuff I'm used to play with:</h2>
 
             <h4>Javascript:</h4>
@@ -77,9 +88,7 @@
               <li>jshint, jscs</li>
               <li>npm, Bower</li>
             </ul>
-          </section>
 
-          <section>
             <h4>Python</h4>
             <ul>
               <li>Pyramid, Flask, Django</li>
@@ -88,35 +97,27 @@
               <li>Celery</li>
               <li>Twisted</li>
             </ul>
-          </section>
 
-          <section>
             <h4>Perl</h4>
             <ul>
               <li>Catalyst, Dancer</li>
               <li>Template Tool Kit</li>
             </ul>
-          </section>
 
-          <section>
             <h4>Web</h4>
             <ul>
               <li>HTML5, SVG, Canvas</li>
               <li>CSS3, Less, Sass</li>
               <li>Bootstrap, Compass</li>
             </ul>
-          </section>
 
-          <section>
             <h4>Databases</h4>
             <ul>
               <li>Mysql, PostgreSQL</li>
               <li>CoutchDB, MongoDB, RethinkDB</li>
             </ul>
-          </section>
 
-          <section>
-            <h4>CI, Bugs trackers, Collaboration Tools, Versionning</h4>
+            <h4>CI, Bugs trackers, Collaboration Tools, Versionning, Deployment</h4>
             <ul>
               <li>Jenkins</li>
               <li>Travis</li>
@@ -124,18 +125,15 @@
               <li>Github</li>
               <li>Trac</li>
               <li>Git</li>
+              <li>Docker</li>
             </ul>
-          </section>
 
-          <section>
             <h4>OS</h4>
             <ul>
-              <li>Linux (Archlinux, Mint, Debian)</li>
+              <li>Linux (Archlinux, Debian, Mint)</li>
               <li>Windows</li>
             </ul>
-          </section>
 
-          <section>
             <h4>Some other technos that I used occasionally:</h4>
             <ul>
               <li>PHP: Zend Framework, Cake, Symphony</li>
@@ -149,10 +147,11 @@
             <h2>My current readings:</h2>
 
             <ul>
+              <li>Full isomorphic JS apps</li>
+              <li>Angular 2.0</li>
               <li>Go</li>
               <li>Rust</li>
               <li>Phaser (JS library to create games)</li>
-              <li>Full isomorphic JS apps</li>
               <li>Mobile web development (ionic framework)</li>
               <li>Android native development</li>
             </ul>
@@ -241,13 +240,24 @@
           </section>
 
           <section>
-            <h4><a href="javascript:void(0)" onclick="scrollTo('#stuff');">Stuff</a></h4>
+            <h4><a href="javascript:void(0)" onclick="scrollTo('#introspection');">Introspection</a></h4>
             <ul>
-              <li>AngularJS, ReactJS, jQuery, node.js</li>
-              <li>Python</li>
-              <li>Perl</li>
-              <li>PHP</li>
-              <li>HTML5, CSS3, SVG, Canvas&#8230;</li>
+              <li>Love to learn, clean and powerfull pieces of code</li>
+              <li>Hate the mess</li>
+              <li>Pragmatic</li>
+              <li><a href="http://en.wikipedia.org/wiki/INTJ">INTJ</a></li>
+            </ul>
+          </section>
+
+          <section>
+            <h4><a href="javascript:void(0)" onclick="scrollTo('#stuff');">Work everyday with:</a></h4>
+            <ul>
+              <li>AngularJS, ReactJS, jQuery, Gulp, node.js&#8230;</li>
+              <li>Python, Perl, PHP</li>
+              <li>HTML5, Less, Sass, CSS3, SVG, Canvas, JSON&#8230;</li>
+              <li>Mysql, PostgreSQL, CoutchDB, MongoDB, RethinkDB</li>
+              <li>GitLab, Github, Trac, Jenkins, Docker&#8230;</li>
+              <li>Linux</li>
             </ul>
           </section>
 
@@ -293,6 +303,8 @@
         <h2>This is the bottom of the page.</h2>
       </footer>
     </div>
+
+    <a class="no-print" href="https://github.com/cr0cK/cv"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/652c5b9acfaddf3a9c326fa6bde407b87f7be0f4/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6f72616e67655f6666373630302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png"></a>
 
     <script src="js/vendor/jquery.min.js"></script>
     <script src="js/main.js"></script>
