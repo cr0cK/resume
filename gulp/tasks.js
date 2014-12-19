@@ -52,6 +52,13 @@ tasks.buildLess = function () {
   return gulp
     .src('./less/main.less')
     .pipe(less())
+    .pipe(gulp.dest('./www/css'));
+};
+
+tasks.compileLess = function () {
+  return gulp
+    .src('./less/main.less')
+    .pipe(less())
     .pipe(minifyCss())
     .pipe(gulp.dest('./www/css'));
 };

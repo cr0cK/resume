@@ -13,6 +13,7 @@ gulp.task('_build:bowerComponents', ['_clean'], tasks.buildBowerComponents);
 gulp.task('_build:js', ['_clean'], tasks.buildJS);
 gulp.task('_build:html', ['_clean'], tasks.buildHtml);
 
+gulp.task('_compile:less', ['_clean'], tasks.compileLess);
 gulp.task('_compile:js', ['_clean'], tasks.compileJS);
 gulp.task('_compile:html', ['_clean'], tasks.compileHtml);
 
@@ -28,6 +29,7 @@ gulp.task('_copy:graphics', ['_clean'], tasks.copyGraphics);
 gulp.task('_copy:all', ['_copy:json', '_copy:graphics']);
 
 gulp.task('_watch', ['build:all'], function () {
+  gulp.watch('./svg/**/*', ['_build:font']);
   gulp.watch('./less/**/*', ['_watch:less']);
   gulp.watch('./js/**/*', ['_watch:js']);
   gulp.watch('./html/*.html', ['_watch:html']);
@@ -44,7 +46,7 @@ gulp.task('build:all', [
 ]);
 
 gulp.task('compile:all', [
-  '_build:font', '_build:less',
+  '_build:font', '_compile:less',
   '_build:bowerComponents', '_compile:js',
   '_copy:all',
   '_compile:html'
