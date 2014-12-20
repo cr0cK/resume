@@ -1,103 +1,27 @@
-@border-top-color: #2d6d7f;
-// name
-@first-color: #888;
-// quick-links
-@second-color: #FF7E2D;
-// section titles
-@third-color: #00cdf2;
-@text-color: #555;
-@alt-text-color: #888;
-
-
-body {
-  font-family: 'Source Sans Pro', sans-serif;
-  border-top: 8px solid @border-top-color;
-  color: @text-color;
+.ph-point {
+  width: @thread-height + @point-height;
+  height: @thread-height + @point-height;
+  border-radius: 50%;
+  background: white;
+  border: 2px solid @thread-background-color;
 }
 
-main {
-  width: 960px;
-  margin: 0 auto;
+.ph-arrow {
+  &:extend(.icon:before);
+  &:extend(.icon-arrow:before);
+  position: absolute;
+  font-size: @arrow-size;
+  color: @arrow-color;
+  display: block;
 }
 
-header {
-  padding: 50px 0 0 0;
-
-  // name
-  h1 {
-    margin: 0;
-    padding: 0;
-    font-family: 'Inder', sans-serif;
-    font-size: 3em;
-    color: @first-color;
-    font-weight: bold;
-    text-transform: uppercase;
-  }
-
-  ul.quick-links {
-    padding: 0;
-    margin: 0;
-
-    li {
-      font-weight: bold;
-      display: inline-block;
-      padding-right: 20px;
-      color: @first-color;
-
-      &:before {
-        padding-right: 5px;
-        font-size: 1.2em;
-        vertical-align: top;
-      }
-
-      span {
-        color: @second-color;
-      }
-
-      a {
-        color: @second-color;
-        text-decoration: none;
-
-        &:hover {
-          text-decoration: underline;
-        }
-      }
-    }
-  }
-}
-
-section {
-  margin: 50px 0;
-
-  h2 {
-    margin-top: 0;
-    color: @third-color;
-    font-size: 2em;
-
-    &:before {
-      padding-right: 10px;
-      color: @first-color;
-    }
-  }
-
+section.education {
   div.graphic {
     margin: 115px 0 0 50px;
     position: relative;
     height: 100px;
 
     div.thread {
-      @thread-height: 10px;
-      @thread-background-color: #ddd;
-      @point-height: 6px;
-      @point-year-left-value: 155px;
-      @point-start-left: 55px;
-      @point-bac-left: @point-start-left;
-      @point-bts-left: @point-start-left + @point-year-left-value * 2;
-      @point-cs2i-left: @point-bts-left + @point-year-left-value * 2;
-      @point-master-left: @point-cs2i-left + @point-year-left-value * 1;
-      @point-cerealog-left: @point-start-left;
-      @point-gandi-left: @point-cerealog-left + @point-year-left-value * 2;
-
       position: absolute;
       width: 100%;
       height: 10px;
@@ -106,11 +30,7 @@ section {
       div.point {
         position: absolute;
         top: -(@point-height / 2) - 2;
-        width: @thread-height + @point-height;
-        height: @thread-height + @point-height;
-        border-radius: 50%;
-        background: white;
-        border: 2px solid @thread-background-color;
+        &:extend(.ph-point);
 
         &.start {
           margin-left: -(@point-height / 2);
@@ -157,7 +77,6 @@ section {
 
             &.school {
               @point-school-width: 200px;
-              @point-bakground: #ccc;
               position: absolute;
               top: 30px;
               left: 0;
@@ -235,17 +154,10 @@ section {
       }
 
       &:before {
-        &:extend(.icon:before);
-        &:extend(.icon-arrow:before);
-        position: absolute;
+        &:extend(.ph-arrow);
         top: -12px;
         right: -15px;
-        font-size: 2.2em;
-        color: @thread-background-color;
       }
     }
   }
 }
-
-
-

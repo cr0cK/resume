@@ -1,0 +1,43 @@
+header {
+  // name
+  h1 {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inder', sans-serif;
+    font-size: 3em;
+    color: @first-color;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  ul.quick-links {
+    padding: 0;
+    margin: 0;
+
+    li {
+      font-weight: bold;
+      display: inline-block;
+      padding-right: 20px;
+      color: @first-color;
+
+      &:before {
+        padding-right: 5px;
+        font-size: 1.2em;
+        vertical-align: top;
+      }
+
+      span {
+        color: @second-color;
+      }
+
+      a {
+        color: @second-color;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
