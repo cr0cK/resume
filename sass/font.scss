@@ -1,0 +1,155 @@
+@font-face {
+  font-family: "cr0cK";
+  src: url('../fonts/cr0cK.eot');
+  src: url('../fonts/cr0cK.eot?#iefix') format('eot'),
+    url('../fonts/cr0cK.woff') format('woff'),
+    url('../fonts/cr0cK.ttf') format('truetype'),
+    url('../fonts/cr0cK.svg#cr0cK') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+%icon {
+  font-family: "cr0cK";
+  font-style: normal;
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+[class^="icon-"],
+[class*=" icon-"] {
+  &:before {
+    @extend %icon;
+  }
+}
+
+@mixin icon-content($content) {
+  content: $content;
+}
+
+
+%icon-arrow {
+  @extend %icon;
+}
+%icon-arrow, .icon-arrow:before {
+  @include icon-content("\E001");
+}
+
+%icon-bullist {
+  @extend %icon;
+}
+%icon-bullist, .icon-bullist:before {
+  @include icon-content("\E002");
+}
+
+%icon-download {
+  @extend %icon;
+}
+%icon-download, .icon-download:before {
+  @include icon-content("\E003");
+}
+
+%icon-email {
+  @extend %icon;
+}
+%icon-email, .icon-email:before {
+  @include icon-content("\E004");
+}
+
+%icon-experience {
+  @extend %icon;
+}
+%icon-experience, .icon-experience:before {
+  @include icon-content("\E005");
+}
+
+%icon-extra {
+  @extend %icon;
+}
+%icon-extra, .icon-extra:before {
+  @include icon-content("\E006");
+}
+
+%icon-github {
+  @extend %icon;
+}
+%icon-github, .icon-github:before {
+  @include icon-content("\E007");
+}
+
+%icon-heart {
+  @extend %icon;
+}
+%icon-heart, .icon-heart:before {
+  @include icon-content("\E008");
+}
+
+%icon-info {
+  @extend %icon;
+}
+%icon-info, .icon-info:before {
+  @include icon-content("\E009");
+}
+
+%icon-linkedin {
+  @extend %icon;
+}
+%icon-linkedin, .icon-linkedin:before {
+  @include icon-content("\E00A");
+}
+
+%icon-martial {
+  @extend %icon;
+}
+%icon-martial, .icon-martial:before {
+  @include icon-content("\E00B");
+}
+
+%icon-phone {
+  @extend %icon;
+}
+%icon-phone, .icon-phone:before {
+  @include icon-content("\E00C");
+}
+
+%icon-printer {
+  @extend %icon;
+}
+%icon-printer, .icon-printer:before {
+  @include icon-content("\E00D");
+}
+
+%icon-school {
+  @extend %icon;
+}
+%icon-school, .icon-school:before {
+  @include icon-content("\E00E");
+}
+
+%icon-skills {
+  @extend %icon;
+}
+%icon-skills, .icon-skills:before {
+  @include icon-content("\E00F");
+}
+
+%icon-star {
+  @extend %icon;
+}
+%icon-star, .icon-star:before {
+  @include icon-content("\E010");
+}
+
+%icon-twitter {
+  @extend %icon;
+}
+%icon-twitter, .icon-twitter:before {
+  @include icon-content("\E011");
+}
+
+%icon-web {
+  @extend %icon;
+}
+%icon-web, .icon-web:before {
+  @include icon-content("\E012");
+}

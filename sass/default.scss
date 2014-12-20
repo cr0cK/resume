@@ -176,7 +176,7 @@ nav a:hover {
    Media Queries
    ========================================================================== */
 
-@media only screen and (min-width: 480px) {
+$media only screen and (min-width: 480px) {
 
 /* ====================
     INTERMEDIATE: Menu
@@ -211,7 +211,7 @@ nav a:hover {
     }
 }
 
-@media only screen and (min-width: 768px) {
+$media only screen and (min-width: 768px) {
 
 /* ====================
     WIDE: CSS3 Effects
@@ -252,7 +252,7 @@ nav a:hover {
     }
 }
 
-@media only screen and (min-width: 1140px) {
+$media only screen and (min-width: 1140px) {
 
 /* ===============
     Maximal Width
@@ -330,7 +330,7 @@ nav a:hover {
    Print styles
    ========================================================================== */
 
-@media print {
+$media print {
     * {
         background: transparent !important;
         color: #000 !important;
@@ -376,7 +376,7 @@ nav a:hover {
         max-width: 100% !important;
     }
 
-    @page {
+    $page {
         margin: 0.5cm;
     }
 

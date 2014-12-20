@@ -4,7 +4,9 @@ var settings    = require('./settings'),
     gulp        = require('gulp'),
     clean       = require('gulp-clean'),
     concat      = require('gulp-concat'),
-    less        = require('gulp-less'),
+    sass        = require('gulp-sass'),
+    autoprefixer = require('gulp-autoprefixer'),
+    sourcemaps  = require('gulp-sourcemaps'),
     minifyCss   = require('gulp-minify-css'),
     minifyHtml  = require('gulp-minify-html'),
     annotate    = require('gulp-ng-annotate'),
@@ -42,23 +44,29 @@ tasks.buildFont = function () {
           fontPath: '../fonts/',
           className: 'icon'
         }))
-        .pipe(rename('font.less'))
-        .pipe(gulp.dest('./less/'));
+        .pipe(rename('font.scss'))
+        .pipe(gulp.dest('./sass/'));
     })
     .pipe(gulp.dest('www/fonts/'));
 };
 
-tasks.buildLess = function () {
+tasks.buildSass = function () {
   return gulp
-    .src('./less/main.less')
-    .pipe(less())
-    .pipe(gulp.dest('./www/css'));
+    .src('./sass/main.scss')
+      .pipe(sourcemaps.init())
+      .pipe(sass(settings.sassOptions))
+      .pipe(sourcemaps.write('.'))
+      .pipe(gulp.dest('./www/css'));
 };
 
-tasks.compileLess = function () {
+tasks.compileSass = function () {
   return gulp
-    .src('./less/main.less')
-    .pipe(less())
+    .src('./sass/main.scss')
+    .pipe(sass(settings.sassOptions))
+    .pipe(autoprefixer({
+      browsers: ['> 1%', 'last 2 versions'],
+      cascade: false
+    }))
     .pipe(minifyCss())
     .pipe(gulp.dest('./www/css'));
 };

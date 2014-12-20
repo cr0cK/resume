@@ -2,22 +2,22 @@ section.experiences {
   div.thread {
     position: relative;
     padding: 10px 0 30px 30px;
-    border-left: 10px solid @thread-background-color;
+    border-left: 10px solid $thread-background-color;
 
     &:before {
-      &:extend(.ph-arrow);
-      top: -15px;
+      @extend %ph-arrow;
+      top: -20px;
       left: -22px;
       transform: rotate(-90deg);
     }
 
     &:after {
       content: '';
-      &:extend(.ph-point);
+      @extend %ph-point;
       position: absolute;
       bottom: -5px;
       left: -15px;
-      background: @thread-background-color;
+      background: $thread-background-color;
     }
 
     > div {
@@ -31,20 +31,20 @@ section.experiences {
           vertical-align: top;
 
           h3 {
-            color: @text-color;
+            color: $text-color;
             margin: 0;
             padding: 0;
 
             ~ p {
               margin: 0;
               font-size: smaller;
-              color: @alt-text-color;
+              color: $alt-text-color;
             }
           }
 
           &:before {
             content: '';
-            &:extend(.ph-point);
+            @extend %ph-point;
             position: absolute;
             top: 0;
             left: -45px;
