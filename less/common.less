@@ -6,7 +6,7 @@ body {
 
 main {
   width: 960px;
-  margin: 75px auto 0 auto;
+  margin: 75px auto;
 }
 
 section {
@@ -24,5 +24,12 @@ section {
   }
 }
 
-
-
+div.inline {
+  > section {
+    padding: 0 10px 0 0;
+    box-sizing: border-box;
+    margin: 0;
+    width: 33%;
+    display: inline-block;
+  }
+}
