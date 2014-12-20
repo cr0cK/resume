@@ -13,13 +13,17 @@ section {
   margin: 50px 0;
 
   h2 {
+    position: relative;
     margin-top: 0;
     color: $third-color;
     font-size: 2em;
+    padding-left: 50px;
 
     &:before {
-      padding-right: 10px;
       color: $first-color;
+      position: absolute;
+      top: 2px;
+      left: 0;
     }
   }
 }
