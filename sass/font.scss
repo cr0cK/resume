@@ -119,44 +119,51 @@
   @include icon-content("\E00D");
 }
 
+%icon-presentation {
+  @extend %icon;
+}
+%icon-presentation, .icon-presentation:before {
+  @include icon-content("\E00E");
+}
+
 %icon-printer {
   @extend %icon;
 }
 %icon-printer, .icon-printer:before {
-  @include icon-content("\E00E");
+  @include icon-content("\E00F");
 }
 
 %icon-school {
   @extend %icon;
 }
 %icon-school, .icon-school:before {
-  @include icon-content("\E00F");
+  @include icon-content("\E010");
 }
 
 %icon-skills {
   @extend %icon;
 }
 %icon-skills, .icon-skills:before {
-  @include icon-content("\E010");
+  @include icon-content("\E011");
 }
 
 %icon-star {
   @extend %icon;
 }
 %icon-star, .icon-star:before {
-  @include icon-content("\E011");
+  @include icon-content("\E012");
 }
 
 %icon-twitter {
   @extend %icon;
 }
 %icon-twitter, .icon-twitter:before {
-  @include icon-content("\E012");
+  @include icon-content("\E013");
 }
 
 %icon-web {
   @extend %icon;
 }
 %icon-web, .icon-web:before {
-  @include icon-content("\E013");
+  @include icon-content("\E014");
 }

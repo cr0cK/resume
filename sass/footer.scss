@@ -1,0 +1,30 @@
+footer {
+  padding: 10px;
+  background: $layout-alt-color;
+  text-align: center;
+
+  p {
+    color: white;
+
+    span {
+      position: relative;
+      padding-left: 23px;
+
+      &:before {
+        @extend %icon-github;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+    }
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
