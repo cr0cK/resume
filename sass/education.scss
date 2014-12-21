@@ -1,12 +1,12 @@
 section.education {
   div.graphic {
-    margin: 115px 0 0 50px;
+    margin: 95px 0 0 40px;
     position: relative;
-    height: 100px;
+    height: 90px;
 
     div.thread {
       position: absolute;
-      width: 100%;
+      width: 95%;
       height: 10px;
       background: $thread-background-color;
 
@@ -41,10 +41,21 @@ section.education {
               width: $point-label-width;
               margin-left: -($point-label-width / 2);
 
+              &.highlight {
+                color: $second-color;
+
+                > span {
+                  padding: 1px 6px;
+                  background: $second-color;
+                  color: white;
+                  border-radius: 5px;
+                }
+              }
+
               small {
                 font-size: smaller;
                 font-weight: normal;
-                color: $third-color;
+                color: $second-color;
               }
             }
 
