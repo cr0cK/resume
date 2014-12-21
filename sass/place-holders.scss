@@ -1,7 +1,15 @@
-.ph-point {
+%ph-point {
   width: $thread-height + $point-height;
   height: $thread-height + $point-height;
   border-radius: 50%;
   background: white;
   border: 2px solid $thread-background-color;
+}
+
+%ph-arrow {
+  @extend %icon-arrow;
+  position: absolute;
+  font-size: $arrow-size;
+  color: $arrow-color;
+  display: block;
 }

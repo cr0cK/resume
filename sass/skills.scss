@@ -1,59 +1,66 @@
 section.skills {
-  ul {
-    margin: 0;
-    padding: 0;
+  float: left;
 
-    li {
-      list-style: none;
-      font-weight: bold;
-      line-height: 2em;
+  div.column {
+    width: 250px;
+    display: inline-block;
 
-      span {
-        &.label {
-          display: inline-block;
-          color: $alt-text-color;
-          width: 100px;
+    ul {
+      margin: 0;
+      padding: 0;
 
-          .info-icon {
-            position: relative;
+      li {
+        list-style: none;
+        font-weight: bold;
+        line-height: 2em;
 
-            & > .info-content {
-              position: absolute;
-              top: 13px;
-              left: 20px;
-              line-height: 1.4em;
-              font-size: 0.8em;
-              background: black;
-              color: white;
-              padding: 5px 10px 5px 20px;
-              white-space: nowrap;
-              display: none;
-              opacity: 0.6;
+        span {
+          &.label {
+            display: inline-block;
+            color: $alt-text-color;
+            width: 100px;
 
-              li {
-                position: relative;
+            .info-icon {
+              position: relative;
 
-                &:before {
-                  @extend %icon-bullist;
-                  font-size: 1.3em;
-                  position: absolute;
-                  top: 1px;
-                  left: -17px;
+              & > .info-content {
+                position: absolute;
+                top: 13px;
+                left: 20px;
+                line-height: 1.4em;
+                font-size: 0.8em;
+                background: black;
+                color: white;
+                padding: 5px 10px 5px 20px;
+                white-space: nowrap;
+                display: none;
+                opacity: 0.6;
+
+                li {
+                  position: relative;
+
+                  &:before {
+                    @extend %icon-bullist;
+                    font-size: 1.3em;
+                    position: absolute;
+                    top: 1px;
+                    left: -17px;
+                  }
                 }
               }
-            }
 
-            &:hover {
-              & > .info-content {
-                display: block;
+              &:hover {
+                & > .info-content {
+                  display: block;
+                }
               }
-            }
 
-            &:after {
-              @extend %icon-info;
-              padding-left: 5px;
-              font-size: 0.8em;
-              color: $alt-text-color;
+              &:after {
+                @extend %icon-info;
+                padding-left: 5px;
+                font-size: 0.8em;
+                color: $alt-text-color;
+              }
             }
           }
         }

@@ -15,6 +15,7 @@ section {
   h2 {
     position: relative;
     margin-top: 0;
+    margin-bottom: 50px;
     color: $third-color;
     font-size: 2em;
     padding-left: 50px;
@@ -28,12 +29,12 @@ section {
   }
 }
 
-div.inline {
-  > section {
-    padding: 0 10px 0 0;
-    box-sizing: border-box;
-    margin: 0;
-    width: 33%;
-    display: inline-block;
-  }
+section.interests {
+  width: 450px;
+  float: left;
+}
+
+section.extra {
+  width: 450px;
+  float: left;
 }
