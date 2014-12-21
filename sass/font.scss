@@ -91,65 +91,72 @@
   @include icon-content("\E009");
 }
 
+%icon-interrogation {
+  @extend %icon;
+}
+%icon-interrogation, .icon-interrogation:before {
+  @include icon-content("\E00A");
+}
+
 %icon-linkedin {
   @extend %icon;
 }
 %icon-linkedin, .icon-linkedin:before {
-  @include icon-content("\E00A");
+  @include icon-content("\E00B");
 }
 
 %icon-martial {
   @extend %icon;
 }
 %icon-martial, .icon-martial:before {
-  @include icon-content("\E00B");
+  @include icon-content("\E00C");
 }
 
 %icon-phone {
   @extend %icon;
 }
 %icon-phone, .icon-phone:before {
-  @include icon-content("\E00C");
+  @include icon-content("\E00D");
 }
 
 %icon-printer {
   @extend %icon;
 }
 %icon-printer, .icon-printer:before {
-  @include icon-content("\E00D");
+  @include icon-content("\E00E");
 }
 
 %icon-school {
   @extend %icon;
 }
 %icon-school, .icon-school:before {
-  @include icon-content("\E00E");
+  @include icon-content("\E00F");
 }
 
 %icon-skills {
   @extend %icon;
 }
 %icon-skills, .icon-skills:before {
-  @include icon-content("\E00F");
+  @include icon-content("\E010");
 }
 
 %icon-star {
   @extend %icon;
 }
 %icon-star, .icon-star:before {
-  @include icon-content("\E010");
+  @include icon-content("\E011");
 }
 
 %icon-twitter {
   @extend %icon;
 }
 %icon-twitter, .icon-twitter:before {
-  @include icon-content("\E011");
+  @include icon-content("\E012");
 }
 
 %icon-web {
   @extend %icon;
 }
 %icon-web, .icon-web:before {
-  @include icon-content("\E012");
+  @include icon-content("\E013");
 }
