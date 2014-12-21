@@ -74,8 +74,8 @@ section.education {
               }
 
               &:before {
+                @extend %icon-arrow;
                 $arrow-width: 16px;
-                @extend %icon-before;
                 position: absolute;
                 top: -13px;
                 left: ($point-school-width - $arrow-width) / 2;
@@ -102,7 +102,7 @@ section.education {
                 top: -50px;
 
                 &:before {
-                  top: 17px;
+                  top: 16px;
                   transform: rotate(+90deg);
                 }
               }
