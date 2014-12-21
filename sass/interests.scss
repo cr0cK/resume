@@ -59,6 +59,10 @@ section.interests {
             @include circle(85, -50, 75, 1.1, #61DAFB, #ffffff, 0.8);
           }
 
+          &.e2e {
+            @include circle(60, -73, 29, 1.1, #B72F33, #ffffff, 0.7);
+          }
+
           &.isomorphic {
             @include circle(75, 0, 135, 1.0, #00a1c9, #ffffff, 0.8);
           }
@@ -82,7 +86,7 @@ section.interests {
 
         li {
           &.html5 {
-            @include circle(75, -50, -30, 1.2, #EF6529, #ffffff, 0.8);
+            @include circle(65, -40, -30, 1.2, #EF6529, #ffffff, 0.8);
           }
 
           &.css3 {
@@ -91,6 +95,58 @@ section.interests {
 
           &.less-sass {
             @include circle(50, 85, 90, 1.2, #DA619B, #ffffff, 0.8);
+          }
+
+          &.responsive {
+            @include circle(60, -20, 130, 1.2, #828282, #ffffff, 0.8);
+          }
+
+          &.mobile-apps {
+            @include circle(75, 80, -30, 1.2, #111111, #ffffff, 0.8);
+          }
+
+          &.android {
+            @include circle(60, 120, 30, 1.2, #97C024, #ffffff, 0.8);
+          }
+        }
+      }
+
+      &.python {
+        @include circle(80, 270, 90, 1.4, #366E9F, #ffffff, 1);
+      }
+
+      &.go {
+        @include circle(60, 230, 210, 1.8, #D0B799, #ffffff, 1);
+      }
+
+      &.nosql {
+        @include circle(60, 240, 10, 1.4, #ED1E18, #ffffff, 1);
+      }
+
+      &.devops {
+        @include circle(75, 290, 400, 1, #014062, #ffffff, 1);
+
+        li {
+          &.docker {
+            @include circle(60, 53, 47, 1.3, #24B8EB, #ffffff, 0.8);
+          }
+
+          &.ci {
+            @include circle(50, -30, 50, 1.8, #F0D4B5, #ffffff, 0.8);
+          }
+
+          &.deployment {
+            @include circle(55, 0, -50, 1.2, #DCE5EC, #555, 0.8);
+          }
+        }
+      }
+
+      &.agile {
+        @include circle(70, 320, 230, 1, #003580, #ffffff, 1);
+
+        li {
+          &.kanban {
+            @include circle(55, 30, 60, 1.3, #DDCE69, #ffffff, 0.8);
           }
         }
       }
