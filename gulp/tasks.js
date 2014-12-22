@@ -117,13 +117,13 @@ tasks.copyGraphics = function () {
 
 tasks.buildHtml = function () {
   return gulp
-    .src('./html/index.html')
+    .src('./html/**/*.html')
     .pipe(gulp.dest('./www'));
 };
 
 tasks.compileHtml = function () {
   return gulp
-    .src('./html/index.html')
+    .src('./html/**/*.html')
     .pipe(minifyHtml())
     .pipe(gulp.dest('./www'));
 };
