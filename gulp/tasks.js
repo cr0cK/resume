@@ -11,6 +11,7 @@ var settings    = require('./settings'),
     minifyHtml  = require('gulp-minify-html'),
     annotate    = require('gulp-ng-annotate'),
     uglify      = require('gulp-uglify'),
+    browserify  = require('gulp-browserify'),
     jshint      = require('gulp-jshint'),
     iconfont    = require('gulp-iconfont'),
     consolidate = require('gulp-consolidate'),
@@ -83,7 +84,11 @@ tasks.buildBowerComponents = function () {
 tasks.buildJS = function () {
   return gulp
     .src('js/**/*')
-    .pipe(concat('source.js'))
+    .pipe(browserify({
+      insertGlobals: true,
+      debug: true
+    }))
+    .pipe(rename('app.js'))
     .pipe(gulp.dest('./www/js'));
 };
 
