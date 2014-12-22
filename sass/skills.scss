@@ -1,9 +1,11 @@
 section.skills {
   float: left;
+  padding-right: 0;
 
   div.column {
-    width: 250px;
+    width: 200px;
     display: inline-block;
+    vertical-align: top;
 
     ul {
       margin: 0;
@@ -70,11 +72,10 @@ section.skills {
 
   .icon-star {
     color: $second-color;
+    font-size: 0.7em;
 
     &.empty {
       color: $alt-text-color;
     }
   }
-
-
 }
