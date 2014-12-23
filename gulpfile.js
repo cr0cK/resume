@@ -17,6 +17,11 @@ gulp.task('_compile:sass', ['_clean', '_build:font'], tasks.compileSass);
 gulp.task('_compile:js', ['_clean'], tasks.compileJS);
 gulp.task('_compile:html', ['_clean'], tasks.compileHtml);
 
+gulp.task('_watch:json', tasks.copyJSON);
+gulp.task('_watch:sass', tasks.buildSass);
+gulp.task('_watch:js', ['_lint:js'], tasks.buildJS);
+gulp.task('_watch:html', tasks.buildHtml);
+
 gulp.task('_lint:js', tasks.lintJS);
 
 gulp.task('_copy:json', ['_clean'], tasks.copyJSON);
@@ -24,11 +29,11 @@ gulp.task('_copy:graphics', ['_clean'], tasks.copyGraphics);
 gulp.task('_copy:all', ['_copy:json', '_copy:graphics']);
 
 gulp.task('_watch', ['build:all'], function () {
-  gulp.watch('./svg/**/*', tasks.buildFont);
-  gulp.watch('./sass/**/*', tasks.buildSass);
-  gulp.watch('./js/**/*', ['_lint:js'], tasks.buildJS);
-  gulp.watch('./html/*.html', tasks.buildHtml);
-  gulp.watch('./json/*.json', tasks.copyJSON);
+  gulp.watch('./svg/**/*', ['_build:font']);
+  gulp.watch('./sass/**/*', ['_watch:sass']);
+  gulp.watch('./js/**/*', ['_watch:js']);
+  gulp.watch('./html/*.html', ['_watch:html']);
+  gulp.watch('./json/*.json', ['_watch:json']);
 });
 
 gulp.task('watch', ['_watch']);

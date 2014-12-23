@@ -10,7 +10,6 @@ var settings    = require('./settings'),
     sourcemaps  = require('gulp-sourcemaps'),
     minifyCss   = require('gulp-minify-css'),
     minifyHtml  = require('gulp-minify-html'),
-    annotate    = require('gulp-ng-annotate'),
     postcss     = require('gulp-postcss'),
     uglify      = require('gulp-uglify'),
     browserify  = require('gulp-browserify'),
@@ -93,6 +92,7 @@ tasks.buildJS = function () {
       insertGlobals: true,
       debug: true
     }))
+    .on('error', function(err){ console.log(err.message); })
     .pipe(rename('app.js'))
     .pipe(gulp.dest('./www/js'));
 };
