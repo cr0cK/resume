@@ -20,10 +20,23 @@ section.interests {
     }
 
     li {
-      &.js          {       top: 100px;   left: 100px;  }
-        &.angularjs {       top: -50px;   left: -50px;  }
-        &.reactjs   {       top: -80px;   left: 91px;   }
-        &.flux      {       top: -110px;  left: 180px;  }
+      &.js              {  top: 120px;   left: 50px;   }
+        &.angularjs     {  top: -50px;   left: -50px;  }
+        &.e2e           {  top: -80px;   left: 20px;   }
+        &.reactjs       {  top: -88px;   left: 76px;   }
+        &.flux          {  top: -110px;  left: 175px;  }
+        &.isomorphic    {  top: -27px;   left: 165px;  }
+        &.node          {  top: 93px;    left: 128px;  }
+        &.games         {  top: 93px;    left: -41px;  }
+        &.webgl         {  top: 140px;   left: -10px;  }
+
+      &.web             {  top: 120px;   left: 450px;  }
+        &.html5         {  top: -40px;   left: -50px;  }
+        &.css3          {  top: -77px;   left: 50px;   }
+        &.preprocessors {  top: -123px;  left: 15px;   }
+        &.responsive    {  top: -100px;  left: 125px;  }
+        &.mobile        {  top: -27px;   left: 165px;  }
+        &.android       {  top: 53px;    left: 108px;  }
     }
   }
 }
