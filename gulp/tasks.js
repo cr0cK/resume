@@ -2,14 +2,16 @@
 
 var settings    = require('./settings'),
     gulp        = require('gulp'),
+    util        = require('gulp-util'),
     clean       = require('gulp-clean'),
     concat      = require('gulp-concat'),
-    sass        = require('gulp-sass'),
-    autoprefixer = require('gulp-autoprefixer'),
+    sass        = require('gulp-ruby-sass'),
+    autoprefixer = require('autoprefixer-core'),
     sourcemaps  = require('gulp-sourcemaps'),
     minifyCss   = require('gulp-minify-css'),
     minifyHtml  = require('gulp-minify-html'),
     annotate    = require('gulp-ng-annotate'),
+    postcss     = require('gulp-postcss'),
     uglify      = require('gulp-uglify'),
     browserify  = require('gulp-browserify'),
     jshint      = require('gulp-jshint'),
@@ -52,22 +54,25 @@ tasks.buildFont = function () {
 };
 
 tasks.buildSass = function () {
-  return gulp
-    .src('./sass/main.scss')
-      .pipe(sourcemaps.init())
-      .pipe(sass(settings.sassOptions))
-      .pipe(sourcemaps.write('.'))
-      .pipe(gulp.dest('./www/css'));
+  util.log('Rebuilding sass...');
+
+  return sass(
+    './sass/main.scss', {
+      sourcemap: true
+    })
+    .pipe(sourcemaps.write())
+    .pipe(postcss([autoprefixer({
+      browsers: ['> 1%', 'last 2 versions', 'Firefox ESR', 'Opera 12.1']
+    })]))
+    .pipe(gulp.dest('./www/css'));
 };
 
 tasks.compileSass = function () {
-  return gulp
-    .src('./sass/main.scss')
-    .pipe(sass(settings.sassOptions))
-    .pipe(autoprefixer({
-      browsers: ['> 1%', 'last 2 versions'],
-      cascade: false
-    }))
+  return sass(
+    './sass/main.scss')
+    .pipe(postcss([autoprefixer({
+      browsers: ['> 1%', 'last 2 versions', 'Firefox ESR', 'Opera 12.1']
+    })]))
     .pipe(minifyCss())
     .pipe(gulp.dest('./www/css'));
 };
