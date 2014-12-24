@@ -27,16 +27,30 @@ section.interests {
         &.flux          {  top: -110px;  left: 175px;  }
         &.isomorphic    {  top: -27px;   left: 165px;  }
         &.node          {  top: 93px;    left: 128px;  }
-        &.games         {  top: 93px;    left: -41px;  }
-        &.webgl         {  top: 140px;   left: -10px;  }
+        &.games         {  top: 83px;    left: -61px;  }
+        &.webgl         {  top: 144px;   left: -14px;  }
 
       &.web             {  top: 120px;   left: 450px;  }
         &.html5         {  top: -40px;   left: -50px;  }
         &.css3          {  top: -77px;   left: 50px;   }
         &.preprocessors {  top: -123px;  left: 15px;   }
         &.responsive    {  top: -100px;  left: 125px;  }
-        &.mobile        {  top: -27px;   left: 165px;  }
+        &.cordova        {  top: 74px;   left: -57px;  }
         &.android       {  top: 53px;    left: 108px;  }
+
+      &.python        {  top: 370px; left: 60px;  }
+      &.go             {  top: 324px;   left: 120px;  }
+      &.perl        {  top: 410px;   left: 10px;  }
+      &.php      {  top: 420px;   left: 120px;  }
+
+      &.db        {  top: 370px; left: 400px;  }
+        &.mysql       {  top: -26px;    left: -55px;  }
+        &.sqlite       {  top: 1px;    left: -109px;  }
+        &.postgresql       {  top: 51px;    left: -59px;  }
+        &.coutchdb       {  top: 97px;    left: 5px;  }
+        &.mongodb       {  top: 60px;    left: 85px;  }
+        &.rethinkdb       {  top: -66px;    left: 15px;  }
+        &.cassandra       {  top: -26px;    left: 89px;  }
     }
   }
 }
