@@ -51,10 +51,13 @@
     drawDonuts('.gitlab', 80, 75, '#656565', '#fff');
     drawDonuts('.git', 80, 80, '#F15034', '#fff');
     drawDonuts('.trac', 60, 80, '#B50600', '#fff', 0.8);
-    drawDonuts('.kanban', 70, 65, '#edea55', '#555', 0.9, 1);
+    drawDonuts('.kanban', 70, 65, '#edea55', '#54420a', 0.9, 1);
 
-  drawDonuts('.irl', 120, 95, '#6EB5E1', '#fff', 1.2, 0.4);
+  drawDonuts('.father', 150, 98, '#EA94B7', '#fff', 1.2, 0.2);
     drawDonuts('.aikido', 90, 85, '#333', '#fff', 0.9, 1.9);
     drawDonuts('.bike', 90, 85, '#828BA1', '#fff', 1.2);
-    drawDonuts('.father', 150, 98, '#EA94B7', '#fff', 1.2, 0.2);
+
+  drawDonuts('.french', 90, 100, '#002680', '#fff', 0.9, 1.5);
+    drawDonuts('.english', 90, 75, '#D1132C', '#fff');
+    drawDonuts('.spanish', 50, 15, '#FEC401', '#54420a', 1, 1);
 })();
