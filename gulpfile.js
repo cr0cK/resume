@@ -26,7 +26,8 @@ gulp.task('_lint:js', tasks.lintJS);
 
 gulp.task('_copy:json', ['_clean'], tasks.copyJSON);
 gulp.task('_copy:graphics', ['_clean'], tasks.copyGraphics);
-gulp.task('_copy:all', ['_copy:json', '_copy:graphics']);
+gulp.task('_copy:extra', ['_clean'], tasks.copyExtra);
+gulp.task('_copy:all', ['_copy:json', '_copy:extra', '_copy:graphics']);
 
 gulp.task('_watch', ['build:all'], function () {
   gulp.watch('./svg/**/*', ['_build:font']);

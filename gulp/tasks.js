@@ -127,6 +127,12 @@ tasks.copyGraphics = function () {
     .pipe(gulp.dest('./www/graphics'));
 };
 
+tasks.copyExtra = function () {
+  return gulp
+    .src('./extra/**/*')
+    .pipe(gulp.dest('./www'));
+};
+
 tasks.buildHtml = function () {
   return gulp
     .src('./html/**/*.html')
