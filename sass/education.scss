@@ -1,0 +1,158 @@
+section.education {
+  div.graphic {
+    margin: 105px 0 0 40px;
+    position: relative;
+    height: 60px;
+
+    div.thread {
+      position: absolute;
+      width: 95%;
+      height: 10px;
+      background: $thread-background-color;
+
+      div.point {
+        position: absolute;
+        top: -($point-height / 2) - 2;
+        @extend %ph-point;
+
+        &.start {
+          margin-left: -($point-height / 2);
+          background: $thread-background-color;
+        }
+
+        div.relative {
+          position: absolute;
+          top: $point-height;
+          left: $point-height + 2;
+          height: 0px;
+          width: 0px;
+
+          > span {
+            position: absolute;
+            text-align: center;
+            white-space: nowrap;
+            font-weight: bold;
+
+            &.label {
+              $point-label-width: 240px;
+              position: absolute;
+              top: -60px;
+              left: 0;
+              width: $point-label-width;
+              margin-left: -($point-label-width / 2);
+
+              &.highlight {
+                color: $second-color;
+
+                > span {
+                  padding: 1px 6px;
+                  background: $second-color;
+                  color: white;
+                  border-radius: 5px;
+                }
+              }
+
+              small {
+                font-size: smaller;
+                font-weight: normal;
+                color: $second-color;
+                display: block;
+                margin-top: 62px;
+              }
+            }
+
+            &.date {
+              $point-date-width: 100px;
+              position: absolute;
+              top: -35px;
+              left: 0;
+              width: $point-date-width;
+              margin-left: -($point-date-width / 2);
+              color: #bbb;
+            }
+
+            &.school {
+              $point-school-width: 200px;
+              position: absolute;
+              top: 30px;
+              left: 0;
+              width: $point-school-width;
+              margin-left: -($point-school-width / 2);
+              color: white;
+
+              > span {
+                background: $point-bakground;
+                padding: 3px 10px;
+                border-radius: 5px;
+              }
+
+              &:before {
+                @extend %icon-arrow;
+                $arrow-width: 16px;
+                position: absolute;
+                top: -13px;
+                left: ($point-school-width - $arrow-width) / 2;
+                color: $point-bakground;
+                display: block;
+                transform: rotate(-90deg);
+              }
+            }
+          }
+        }
+
+        // &.reverse {
+        //   div.relative {
+        //     > span {
+        //       &.label {
+        //         top: 45px;
+        //       }
+
+        //       &.date {
+        //         top: 20px;
+        //       }
+
+        //       &.school {
+        //         top: -50px;
+
+        //         &:before {
+        //           top: 16px;
+        //           transform: rotate(+90deg);
+        //         }
+        //       }
+        //     }
+        //   }
+        // }
+
+        &.bac {
+          left: $point-start-left;
+        }
+
+        &.bts {
+          left: $point-bts-left;
+        }
+
+        &.cs2i {
+          left: $point-cs2i-left;
+        }
+
+        &.master {
+          left: $point-master-left;
+        }
+
+        &.cerealog {
+          left: $point-cerealog-left;
+        }
+
+        &.gandi {
+          left: $point-gandi-left;
+        }
+      }
+
+      &:before {
+        @extend %ph-arrow;
+        top: -14px;
+        right: -20px;
+      }
+    }
+  }
+}

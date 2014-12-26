@@ -1,0 +1,49 @@
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  border-top: 8px solid $layout-alt-color;
+  color: $text-color;
+  background: #ddd;
+}
+
+main {
+  width: 1000px;
+  margin: 0 auto;
+  // padding: 0 40px;
+  // box-sizing: border-box;
+  background: white;
+  box-shadow: 0px 0px 20px 0px #555;
+}
+
+section {
+  margin: 40px 0 0 0;
+  padding: 0 $layout-padding;
+
+
+  h2 {
+    position: relative;
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: $third-color;
+    font-size: 2em;
+    padding-left: 50px;
+
+    &:before {
+      color: $first-color;
+      position: absolute;
+      top: 2px;
+      left: 0;
+    }
+  }
+
+  h3 {
+    padding: 10px 0 0 0;
+  }
+}
+
+a {
+  color: $second-color;
+}
+
+.clear {
+  clear: both;
+}
