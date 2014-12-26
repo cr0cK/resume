@@ -11,7 +11,7 @@
     drawDonuts('.angularjs', 90, 90, '#DD1B16', '#fff', 1, 1);
     drawDonuts('.reactjs', 110, 55, '#61DAFB', '#155c6d');
     drawDonuts('.flux', 90, 25, '#26b0d3', '#fff', 0.8);
-    drawDonuts('.isomorphic', 90, 25, '#0e95b7', '#fff');
+    drawDonuts('.isomorphic', 90, 25, '#0e95b7', '#fff', 1.2);
     drawDonuts('.node', 95, 75, '#80BD01', '#fff');
     drawDonuts('.games', 80, 20, '#d7db67', '#555', 0.7);
     drawDonuts('.webgl', 75, 10, '#990000', '#fff', 0.7);
@@ -24,15 +24,18 @@
     drawDonuts('.cordova', 80, 20, '#7bcfd8', '#555');
     drawDonuts('.android', 100, 25, '#97C024', '#fff');
 
-  drawDonuts('.python', 80, 65, '#FECD40', '#555');
-  drawDonuts('.go', 80, 10, '#D0B799', '#555');
-  drawDonuts('.perl', 60, 85, '#0b5c8c', '#fff', 0.9, 1);
-  drawDonuts('.php', 60, 70, '#8892BF', '#fff', 0.7);
+  drawDonuts('.python', 80, 75, '#FECD40', '#54420a');
+    drawDonuts('.go', 80, 10, '#D0B799', '#555');
+    drawDonuts('.perl', 60, 90, '#0b5c8c', '#fff', 0.9, 1);
+    drawDonuts('.php', 60, 85, '#8892BF', '#fff', 0.7);
+    drawDonuts('.net', 40, 20, '#007DB3', '#fff', 0.8);
+    drawDonuts('.java', 50, 20, '#F8272B', '#fff', 0.8);
 
-  drawDonuts('.db', 100, 65, '#AAAAAC', '#555');
+  drawDonuts('.db', 100, 75, '#AAAAAC', '#555');
     drawDonuts('.mysql', 70, 85, '#2B5A6A', '#fff', 0.7);
     drawDonuts('.sqlite', 60, 85, '#71C0EA', '#0B5C8C', 0.8);
-    drawDonuts('.postgresql', 70, 25, '#306592', '#fff');
+    drawDonuts('.oracle', 50, 15, '#FA0F0C', '#fff');
+    drawDonuts('.postgresql', 70, 40, '#306592', '#fff');
     drawDonuts('.coutchdb', 75, 55, '#BD121B', '#fff', 0.8);
     drawDonuts('.mongodb', 60, 45, '#4F9648', '#fff', 0.9);
     drawDonuts('.rethinkdb', 70, 20, '#1F3F4E', '#fff', 1, 1.5);

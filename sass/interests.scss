@@ -47,13 +47,16 @@ section.interests {
         &.android       {  top: 53px;     left: 104px;    }
 
       &.python          {  top: 420px;    left: 60px;     }
-      &.go              {  top: 360px;    left: 120px;    }
-      &.perl            {  top: 460px;    left: 0px;      }
-      &.php             {  top: 470px;    left: 134px;    }
+        &.go            {  top: -50px;    left: 70px;     }
+        &.perl          {  top: -20px;    left: -60px;    }
+        &.php           {  top: 47px;    left: 76px;      }
+        &.net           {  top: 85px;    left: 14px;      }
+        &.java          {  top: 52px;    left: -44px;     }
 
       &.db              {  top: 380px;    left: 400px;    }
         &.mysql         {  top: -26px;    left: -55px;    }
         &.sqlite        {  top: 1px;      left: -109px;   }
+        &.oracle        {  top: 82px;     left: -103px;   }
         &.postgresql    {  top: 51px;     left: -59px;    }
         &.coutchdb      {  top: 97px;     left: 5px;      }
         &.mongodb       {  top: 60px;     left: 85px;     }
