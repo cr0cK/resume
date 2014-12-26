@@ -8,12 +8,13 @@
   var drawDonuts = function (
       selector,
       diameter, pourcent,
-      background, color,
+      background, inverseColor,
       fontSize, brighterValue
     ) {
       brighterValue = brighterValue || 0.7;
       fontSize = fontSize || 1;
-      var fontSizeMax = 25;
+      var fontSizeMin = 13;
+      var fontSizeBase = 14;
 
       var bg = d3.hsl(background);
       var brighterBg = bg.brighter(brighterValue);
@@ -37,7 +38,7 @@
         .innerRadius(0)
         .outerRadius(radius / 1.5 + 1);
 
-      var text = $(selector).find('span').eq(0).text();
+      var texts = $(selector).find('> span')[0].innerHTML.split('<br>');
 
       var svg = d3.select(selector).append('svg')
         .attr('width', width)
@@ -63,20 +64,46 @@
         .attr('fill', function() { return brighterBg; })
         .attr('d', innerArc);
 
-      container2.append('text')
-        .text(function() { return text; })
-        .style('fill', function() { return color; })
-        .style('font-size', function() {
-          this.fontSize = d3.min([
-            fontSizeMax,
-            diameter / text.length * 1.5 * fontSize
-          ]);
-          return this.fontSize + 'px'; })
-        .style('font-weight', 'bold')
-        .attr('dx', function() { return -this.getBBox().width / 2; })
-        .attr('dy', function() {
-          return this.getBBox().height / 3.5;
-        });
+      texts.forEach(function (text, i) {
+        container2.append('text')
+          .text(function() { return text; })
+          .style('fill', function() {
+            var fillColor;
+            if (inverseColor) {
+              fillColor = bg.darker(3);
+            } else {
+              fillColor = '#fff';
+            }
+            return fillColor;
+          })
+          .style('font-size', function() {
+            var value = d3.max([
+              fontSizeMin,
+              fontSizeBase * (diameter / 90) * fontSize
+            ]);
+
+            return value + 'px';
+          })
+          .style('font-weight', 'bold')
+          .attr('dx', function() { return -this.getBBox().width / 2; })
+          .attr('dy', function() {
+            var dy;
+
+            if (texts.length > 1) {
+              dy = diameter / 10;
+
+              if (i % 2 === 0) {
+                dy = -dy;
+              }
+
+              dy += diameter / 15;
+            } else {
+              dy = this.getBBox().height / 3.5;
+            }
+
+            return dy;
+          });
+      });
     };
 
   module.exports = {

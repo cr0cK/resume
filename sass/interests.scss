@@ -4,6 +4,7 @@ section.interests {
 
   .donuts {
     font-family: 'Inder', sans-serif;
+
     position: absolute;
     top: 80px;
 
@@ -34,9 +35,11 @@ section.interests {
         &.reactjs       {  top: -88px;    left: 76px;     }
         &.flux          {  top: -110px;   left: 175px;    }
         &.isomorphic    {  top: -27px;    left: 165px;    }
+        &.jquery        {  top: 40px;     left: -68px;    }
+        &.d3            {  top: 105px;    left: -49px;    }
         &.node          {  top: 93px;     left: 124px;    }
-        &.games         {  top: 83px;     left: -66px;    }
-        &.webgl         {  top: 144px;    left: -18px;    }
+        &.games         {  top: 147px;    left: 34px;     }
+        &.webgl         {  top: 40px;     left: -61px;    }
 
       &.web             {  top: 120px;    left: 420px;    }
         &.html5         {  top: -40px;    left: -55px;    }
@@ -46,7 +49,7 @@ section.interests {
         &.cordova       {  top: 74px;     left: -60px;    }
         &.android       {  top: 53px;     left: 104px;    }
 
-      &.python          {  top: 420px;    left: 60px;     }
+      &.python          {  top: 480px;    left: 60px;     }
         &.go            {  top: -50px;    left: 70px;     }
         &.perl          {  top: -20px;    left: -60px;    }
         &.php           {  top: 47px;    left: 76px;      }
@@ -78,13 +81,20 @@ section.interests {
         &.trac          {  top: 88px;     left: 15px;     }
         &.kanban        {  top: 30px;     left: 84px;     }
 
-      &.father          {  top: 600px;    left: 170px;    }
+      &.father          {  top: 600px;    left: 310px;    }
         &.bike          {  top: -11px;    left: 140px;    }
         &.aikido        {  top: 0px;      left: -84px;    }
 
       &.french          {  top: 631px;    left: 620px;    }
         &.english       {  top: 0px;      left: 94px;     }
-        &.spanish       {  top: 22px;     left: 188px;    }
+        &.spanish       {  top: 21px;     left: 188px;    }
+    }
+  }
+
+  // because Inder font doesn't render very well in Firefox...
+  @-moz-document url-prefix() {
+    .donuts {
+      font-family: 'Arial', sans-serif;
     }
   }
 }
