@@ -100,6 +100,11 @@ section.education {
           }
         }
 
+        &.cs2i {
+          // force cs2i point left position
+          left: 575px !important;
+        }
+
         // &.reverse {
         //   div.relative {
         //     > span {
