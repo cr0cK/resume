@@ -5,11 +5,15 @@ body {
   background: #ddd;
 }
 
+@media print {
+  body {
+    border-top: none;
+  }
+}
+
 main {
   width: 1000px;
   margin: 0 auto;
-  // padding: 0 40px;
-  // box-sizing: border-box;
   background: white;
   box-shadow: 0px 0px 20px 0px #555;
 }
@@ -46,4 +50,22 @@ a {
 
 .clear {
   clear: both;
+}
+
+@media print {
+  .no-print, .no-print * {
+    display: none !important;
+  }
+
+  .no-desktop {
+    display: block !important;
+
+    &.inline {
+      display: inline !important;
+    }
+  }
+}
+
+.no-desktop {
+  display: none;
 }

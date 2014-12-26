@@ -28,3 +28,13 @@ footer {
     }
   }
 }
+
+@media print {
+  footer {
+    background: none;
+
+    p, a {
+      color: black;
+    }
+  }
+}
