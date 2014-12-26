@@ -1,8 +1,8 @@
 section.education {
   div.graphic {
-    margin: 95px 0 0 40px;
+    margin: 105px 0 0 40px;
     position: relative;
-    height: 90px;
+    height: 60px;
 
     div.thread {
       position: absolute;
@@ -56,6 +56,8 @@ section.education {
                 font-size: smaller;
                 font-weight: normal;
                 color: $second-color;
+                display: block;
+                margin-top: 62px;
               }
             }
 
@@ -98,28 +100,28 @@ section.education {
           }
         }
 
-        &.reverse {
-          div.relative {
-            > span {
-              &.label {
-                top: 45px;
-              }
+        // &.reverse {
+        //   div.relative {
+        //     > span {
+        //       &.label {
+        //         top: 45px;
+        //       }
 
-              &.date {
-                top: 20px;
-              }
+        //       &.date {
+        //         top: 20px;
+        //       }
 
-              &.school {
-                top: -50px;
+        //       &.school {
+        //         top: -50px;
 
-                &:before {
-                  top: 16px;
-                  transform: rotate(+90deg);
-                }
-              }
-            }
-          }
-        }
+        //         &:before {
+        //           top: 16px;
+        //           transform: rotate(+90deg);
+        //         }
+        //       }
+        //     }
+        //   }
+        // }
 
         &.bac {
           left: $point-start-left;
