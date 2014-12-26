@@ -1,6 +1,4 @@
-cv
-==
-
-My Curriculum Vitae: http://alexismineaud.info
+My resume.
+==========
 
 Feel free to contact me if you have some opportunities...
