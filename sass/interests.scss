@@ -1,8 +1,11 @@
 section.interests {
-  height: 650px;
+  height: 900px;
+  position: relative;
 
   .donuts {
     font-family: 'Inder', sans-serif;
+    position: absolute;
+    top: 80px;
 
     ul {
       position: relative;
@@ -19,38 +22,63 @@ section.interests {
       }
     }
 
+    svg {
+      position: relative;
+    }
+
     li {
-      &.js              {  top: 120px;   left: 50px;   }
-        &.angularjs     {  top: -50px;   left: -50px;  }
-        &.e2e           {  top: -80px;   left: 20px;   }
-        &.reactjs       {  top: -88px;   left: 76px;   }
-        &.flux          {  top: -110px;  left: 175px;  }
-        &.isomorphic    {  top: -27px;   left: 165px;  }
-        &.node          {  top: 93px;    left: 128px;  }
-        &.games         {  top: 83px;    left: -61px;  }
-        &.webgl         {  top: 144px;   left: -14px;  }
+      &.js              {  top: 150px;    left: 50px;     }
+        &.angularjs     {  top: -50px;    left: -50px;    }
+        &.e2e           {  top: -80px;    left: 20px;     }
+        &.selenium      {  top: -129px;   left: -9px;     }
+        &.reactjs       {  top: -88px;    left: 76px;     }
+        &.flux          {  top: -110px;   left: 175px;    }
+        &.isomorphic    {  top: -27px;    left: 165px;    }
+        &.node          {  top: 93px;     left: 124px;    }
+        &.games         {  top: 83px;     left: -66px;    }
+        &.webgl         {  top: 144px;    left: -18px;    }
 
-      &.web             {  top: 120px;   left: 450px;  }
-        &.html5         {  top: -40px;   left: -50px;  }
-        &.css3          {  top: -77px;   left: 50px;   }
-        &.preprocessors {  top: -123px;  left: 15px;   }
-        &.responsive    {  top: -100px;  left: 125px;  }
-        &.cordova        {  top: 74px;   left: -57px;  }
-        &.android       {  top: 53px;    left: 108px;  }
+      &.web             {  top: 120px;    left: 420px;    }
+        &.html5         {  top: -40px;    left: -55px;    }
+        &.css3          {  top: -77px;    left: 50px;     }
+        &.preprocessors {  top: -129px;   left: 15px;     }
+        &.responsive    {  top: -100px;   left: 125px;    }
+        &.cordova       {  top: 74px;     left: -60px;    }
+        &.android       {  top: 53px;     left: 104px;    }
 
-      &.python        {  top: 370px; left: 60px;  }
-      &.go             {  top: 324px;   left: 120px;  }
-      &.perl        {  top: 410px;   left: 10px;  }
-      &.php      {  top: 420px;   left: 120px;  }
+      &.python          {  top: 420px;    left: 60px;     }
+      &.go              {  top: 360px;    left: 120px;    }
+      &.perl            {  top: 460px;    left: 0px;      }
+      &.php             {  top: 470px;    left: 134px;    }
 
-      &.db        {  top: 370px; left: 400px;  }
-        &.mysql       {  top: -26px;    left: -55px;  }
-        &.sqlite       {  top: 1px;    left: -109px;  }
-        &.postgresql       {  top: 51px;    left: -59px;  }
-        &.coutchdb       {  top: 97px;    left: 5px;  }
-        &.mongodb       {  top: 60px;    left: 85px;  }
-        &.rethinkdb       {  top: -66px;    left: 15px;  }
-        &.cassandra       {  top: -26px;    left: 89px;  }
+      &.db              {  top: 380px;    left: 400px;    }
+        &.mysql         {  top: -26px;    left: -55px;    }
+        &.sqlite        {  top: 1px;      left: -109px;   }
+        &.postgresql    {  top: 51px;     left: -59px;    }
+        &.coutchdb      {  top: 97px;     left: 5px;      }
+        &.mongodb       {  top: 60px;     left: 85px;     }
+        &.rethinkdb     {  top: -19px;    left: 90px;     }
+        &.cassandra     {  top: -75px;    left: 12px;     }
+
+      &.devops          {  top: 140px;    left: 760px;    }
+        &.docker        {  top: -76px;    left: -37px;    }
+        &.fig           {  top: -132px;   left: 15px;     }
+        &.jenkins       {  top: 27px;     left: -73px;    }
+        &.apache        {  top: 85px;     left: 15px;     }
+        &.varnish       {  top: 44px;     left: 81px;     }
+        &.haproxy       {  top: -26px;    left: 73px;     }
+
+      &.collaboration   {  top: 400px;    left: 760px;    }
+        &.github        {  top: -52px;    left: -107px;   }
+        &.gitlab        {  top: 90px;     left: -98px;    }
+        &.git           {  top: 18px;     left: -75px;    }
+        &.trac          {  top: 88px;     left: 15px;     }
+        &.kanban        {  top: 30px;     left: 84px;     }
+
+      &.irl             {  top: 590px;    left: 390px;    }
+        &.aikido        {  top: 112px;    left: 40px;     }
+        &.bike          {  top: -21px;    left: 110px;    }
+        &.father        {  top: 5px;      left: -142px;   }
     }
   }
 }
