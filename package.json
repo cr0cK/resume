@@ -1,7 +1,7 @@
 {
   "name": "cv",
   "version": "1.0.0",
-  "description": "My CV.",
+  "description": "Alexis Mineaud's resume.",
   "main": "gulpfile.js",
   "scripts": {
     "publish": "git subtree push --prefix www origin gh-pages",
