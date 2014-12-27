@@ -4,8 +4,10 @@ var notify    = require('gulp-notify');
 
 var settings = {
   bowerComponents: [
-    // 'bower_components/d3/d3.min.js',
-    // 'bower_components/jquery/dist/jquery.min.js'
+    'bower_components/d3/d3.min.js',
+    'bower_components/jquery/dist/jquery.min.js',
+    'bower_components/modernizr/modernizr.js',
+    'bower_components/lodash/dist/lodash.min.js'
   ],
   // used in the build and compile CSS tasks.
   sassOptions: {

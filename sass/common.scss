@@ -5,13 +5,6 @@ body {
   background: #ddd;
 }
 
-@media print {
-  body {
-    border-top: none;
-    font-size: 0.5em;
-  }
-}
-
 main {
   width: $middle - 50px;
   margin: 0 auto;
@@ -26,24 +19,26 @@ main {
 }
 
 @media screen and (max-width: $small) {
+  html {
+    font-size: 0.8em;
+  }
+
   section {
     padding: 0 $layout-padding/2 !important;
 
     h2 {
-      font-size: 1.5em !important;
       padding-left: 35px !important;
     }
   }
 }
 
 section {
-  margin: 40px 0 0 0;
+  margin: 2em 0 0 0;
   padding: 0 $layout-padding;
 
   h2 {
     position: relative;
-    margin-top: 0;
-    margin-bottom: 20px;
+    margin: 0;
     color: $third-color;
     font-size: 2em;
     padding-left: 50px;
@@ -57,7 +52,8 @@ section {
   }
 
   h3 {
-    padding: 10px 0 0 0;
+    padding: 0;
+    margin: 1.4em 0 1em 0;
   }
 }
 

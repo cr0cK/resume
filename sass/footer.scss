@@ -1,9 +1,9 @@
 footer {
   padding: 10px;
   background: $layout-alt-color;
-  text-align: center;
 
   p {
+    text-align: center;
     color: white;
 
     span {
@@ -13,8 +13,8 @@ footer {
       &:before {
         @extend %icon-github;
         position: absolute;
-        top: 2px;
-        left: 0;
+        top: 0px;
+        left: 2px;
       }
     }
   }
@@ -25,16 +25,6 @@ footer {
 
     &:hover {
       text-decoration: underline;
-    }
-  }
-}
-
-@media print {
-  footer {
-    background: none;
-
-    p, a {
-      color: black;
     }
   }
 }

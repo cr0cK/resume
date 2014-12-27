@@ -2,6 +2,10 @@ section.interests {
   height: 900px;
   position: relative;
 
+  @media print {
+    padding-top: 2em;
+  }
+
   .donuts {
     font-family: 'Inder', sans-serif;
     margin: 50px 0;
@@ -26,7 +30,7 @@ section.interests {
     }
 
     li {
-      &.js              {  top: 150px;    left: 50px;     }
+      &.javascript      {  top: 150px;    left: 50px;     }
         &.angularjs     {  top: -50px;    left: -50px;    }
         &.e2e           {  top: -80px;    left: 20px;     }
         &.selenium      {  top: -129px;   left: -9px;     }
@@ -37,7 +41,7 @@ section.interests {
         &.d3            {  top: 105px;    left: -49px;    }
         &.node          {  top: 93px;     left: 124px;    }
         &.games         {  top: 147px;    left: 34px;     }
-        &.webgl         {  top: 40px;     left: -61px;    }
+        &.gl            {  top: 40px;     left: -61px;    }
 
       &.web             {  top: 120px;    left: 390px;    }
         &.html5         {  top: -40px;    left: -55px;    }
@@ -96,33 +100,3 @@ section.interests {
     }
   }
 }
-
-// @media screen and (max-width: $middle) {
-//   section.interests {
-//     .donuts {
-//       width: $middle-small;
-//       zoom: 0.8;
-//       border: 1px solid red;
-//     }
-//   }
-// }
-
-// @media screen and (max-width: $middle-small) {
-//   section.interests {
-//     .donuts {
-//       width: $small;
-//       zoom: 0.7;
-//       border: 1px solid blue;
-//     }
-//   }
-// }
-
-// @media screen and (max-width: $small) {
-//   section.interests {
-//     .donuts {
-//       width: $extra-small;
-//       zoom: 0.6;
-//       border: 1px solid lime;
-//     }
-//   }
-// }

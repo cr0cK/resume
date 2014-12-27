@@ -1,0 +1,112 @@
+div.timeline {
+  position: relative;
+  padding: 0.7em 0 0.7em 30px;
+  margin: 1.5em 0 0 0.5em;
+  border-left: 10px solid $thread-background-color;
+
+  @media print {
+    border-left: 8px solid $thread-background-color;
+  }
+
+  &:before {
+    @extend %ph-arrow;
+    top: -20px;
+    left: -22px;
+    transform: rotate(-90deg);
+
+    @media screen and (max-width: $small) {
+      left: -19px;
+    }
+
+    @media print {
+      top: -17px;
+      left: -17px;
+    }
+  }
+
+  &:after {
+    content: '';
+    @extend %ph-point;
+    position: absolute;
+    bottom: -5px;
+    left: -15px;
+    background: $thread-background-color;
+  }
+
+  > div {
+    margin-top: 10px;
+
+    div {
+      &.where {
+        position: relative;
+        width: 23%;
+        min-width: 150px;
+        margin: 0 0 10px 0;
+        display: inline-block;
+        vertical-align: top;
+
+        h3 {
+          color: $text-color;
+          margin: 0;
+          padding: 0;
+          position: relative;
+
+          ~ p {
+            margin: 0;
+            font-size: smaller;
+            color: $alt-text-color;
+          }
+        }
+
+        &:before {
+          content: '';
+          @extend %ph-point;
+          position: absolute;
+          top: 0;
+          left: -45px;
+
+          @media print {
+            left: -44px;
+          }
+        }
+      }
+
+      &.description {
+        width: 76%;
+        display: inline-block;
+        vertical-align: top;
+
+        h3 {
+          margin: 0;
+          padding: 0;
+        }
+      }
+
+      @media screen and (max-width: $middle) {
+        &.where {
+          width: 100%;
+        }
+
+        &.description {
+          width: 100%;
+          h3 {
+            font-size: 1em;
+          }
+        }
+      }
+
+      @media print {
+        &.where {
+          width: 100%;
+        }
+
+        &.description {
+          width: 100%;
+          h3 {
+            font-size: 1.0em;
+          }
+        }
+      }
+    }
+  }
+}
