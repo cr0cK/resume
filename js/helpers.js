@@ -1,9 +1,8 @@
-/* global d3 */
-/* global $ */
-/* jshint strict:false */
-
 (function () {
   'use strict';
+
+  var d3 = require('../node_modules/d3-browserify/d3'),
+      $           = require('../node_modules/jquery-browserify/lib/jquery');
 
   var drawDonuts = function (
       selector,

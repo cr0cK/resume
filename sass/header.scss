@@ -1,7 +1,6 @@
 header {
   padding: 25px $layout-padding 0 $layout-padding;
 
-  // name
   h1 {
     margin: 0;
     padding: 0;
@@ -14,7 +13,7 @@ header {
 
   ul.quick-links {
     padding: 0;
-    margin: 0;
+    margin: 20px 0 0 0;
 
     li {
       font-weight: bold;
@@ -40,6 +39,16 @@ header {
           text-decoration: underline;
         }
       }
+    }
+  }
+}
+
+@media screen and (max-width: $small) {
+  header {
+    padding: 25px $layout-padding/2 0 $layout-padding/2 !important;
+
+    h1 {
+      font-size: 2em;
     }
   }
 }

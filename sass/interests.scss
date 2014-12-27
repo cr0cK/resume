@@ -4,9 +4,7 @@ section.interests {
 
   .donuts {
     font-family: 'Inder', sans-serif;
-
-    position: absolute;
-    top: 80px;
+    margin: 50px 0;
 
     ul {
       position: relative;
@@ -41,7 +39,7 @@ section.interests {
         &.games         {  top: 147px;    left: 34px;     }
         &.webgl         {  top: 40px;     left: -61px;    }
 
-      &.web             {  top: 120px;    left: 420px;    }
+      &.web             {  top: 120px;    left: 390px;    }
         &.html5         {  top: -40px;    left: -55px;    }
         &.css3          {  top: -77px;    left: 50px;     }
         &.preprocessors {  top: -129px;   left: 15px;     }
@@ -56,7 +54,7 @@ section.interests {
         &.net           {  top: 85px;    left: 14px;      }
         &.java          {  top: 52px;    left: -44px;     }
 
-      &.db              {  top: 380px;    left: 400px;    }
+      &.db              {  top: 380px;    left: 380px;    }
         &.mysql         {  top: -26px;    left: -55px;    }
         &.sqlite        {  top: 1px;      left: -109px;   }
         &.oracle        {  top: 82px;     left: -103px;   }
@@ -66,7 +64,7 @@ section.interests {
         &.rethinkdb     {  top: -19px;    left: 90px;     }
         &.cassandra     {  top: -75px;    left: 12px;     }
 
-      &.devops          {  top: 140px;    left: 760px;    }
+      &.devops          {  top: 140px;    left: 700px;    }
         &.docker        {  top: -76px;    left: -37px;    }
         &.fig           {  top: -132px;   left: 15px;     }
         &.jenkins       {  top: 27px;     left: -73px;    }
@@ -74,7 +72,7 @@ section.interests {
         &.varnish       {  top: 44px;     left: 81px;     }
         &.haproxy       {  top: -26px;    left: 73px;     }
 
-      &.collaboration   {  top: 400px;    left: 760px;    }
+      &.collaboration   {  top: 400px;    left: 700px;    }
         &.github        {  top: -52px;    left: -107px;   }
         &.gitlab        {  top: 90px;     left: -98px;    }
         &.git           {  top: 18px;     left: -75px;    }
@@ -85,7 +83,7 @@ section.interests {
         &.bike          {  top: -11px;    left: 140px;    }
         &.aikido        {  top: 0px;      left: -84px;    }
 
-      &.french          {  top: 631px;    left: 620px;    }
+      &.french          {  top: 631px;    left: 600px;    }
         &.english       {  top: 0px;      left: 94px;     }
         &.spanish       {  top: 21px;     left: 188px;    }
     }
@@ -98,3 +96,33 @@ section.interests {
     }
   }
 }
+
+// @media screen and (max-width: $middle) {
+//   section.interests {
+//     .donuts {
+//       width: $middle-small;
+//       zoom: 0.8;
+//       border: 1px solid red;
+//     }
+//   }
+// }
+
+// @media screen and (max-width: $middle-small) {
+//   section.interests {
+//     .donuts {
+//       width: $small;
+//       zoom: 0.7;
+//       border: 1px solid blue;
+//     }
+//   }
+// }
+
+// @media screen and (max-width: $small) {
+//   section.interests {
+//     .donuts {
+//       width: $extra-small;
+//       zoom: 0.6;
+//       border: 1px solid lime;
+//     }
+//   }
+// }

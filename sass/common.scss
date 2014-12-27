@@ -8,20 +8,37 @@ body {
 @media print {
   body {
     border-top: none;
+    font-size: 0.5em;
   }
 }
 
 main {
-  width: 1000px;
+  width: $middle - 50px;
   margin: 0 auto;
   background: white;
   box-shadow: 0px 0px 20px 0px #555;
 }
 
+@media screen and (max-width: $middle) {
+  main {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: $small) {
+  section {
+    padding: 0 $layout-padding/2 !important;
+
+    h2 {
+      font-size: 1.5em !important;
+      padding-left: 35px !important;
+    }
+  }
+}
+
 section {
   margin: 40px 0 0 0;
   padding: 0 $layout-padding;
-
 
   h2 {
     position: relative;
@@ -50,20 +67,6 @@ a {
 
 .clear {
   clear: both;
-}
-
-@media print {
-  .no-print, .no-print * {
-    display: none !important;
-  }
-
-  .no-desktop {
-    display: block !important;
-
-    &.inline {
-      display: inline !important;
-    }
-  }
 }
 
 .no-desktop {
