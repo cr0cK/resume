@@ -94,11 +94,8 @@ tasks.buildJS = function () {
 tasks.compileJS = function () {
   return gulp
     .src('js/**/*')
-    .pipe(browserify({
-      insertGlobals: true
-    }))
-    .pipe(rename('app.js'))
     .pipe(uglify())
+    .pipe(rename('app.js'))
     .pipe(gulp.dest('./www/js'));
 };
 
