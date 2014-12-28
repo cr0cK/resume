@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/cr0cK/cv.git"
+    "url": "https://github.com/cr0cK/resume.git"
   },
   "author": "Alexis Mineaud",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/cr0cK/cv/issues"
+    "url": "https://github.com/cr0cK/resume/issues"
   },
-  "homepage": "https://github.com/cr0cK/cv",
+  "homepage": "https://github.com/cr0cK/resume",
   "devDependencies": {
     "autoprefixer-core": "^4.0.2",
     "gulp": "^3.8.10",
