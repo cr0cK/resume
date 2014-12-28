@@ -121,7 +121,6 @@ var Donuts = function () {
       this._build('.jquery', 70, 95, '#0e95b7', false);
       this._build('.d3', 75, 60, '#F68E51', '#b76637', 1.4);
       this._build('.node', 95, 75, '#80BD01', true);
-      this._build('.games', 80, 20, '#d7db67', true);
       this._build('.gl', 75, 10, '#990000', false);
 
     this._build('.web', 120, 90, '#26A1FF', false, 1.2);
