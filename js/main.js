@@ -189,7 +189,7 @@ var Donuts = function () {
     }
 
     var zoom = width / 1000;
-    var height = width;
+    var height = width * 0.9;
 
     $donuts.width(width);
     $section.height(height);

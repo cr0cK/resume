@@ -1,5 +1,13 @@
+html {
+  font-size: 1em;
+
+  @media screen and (max-width: $small) {
+    font-size: 0.8em;
+  }
+}
+
 body {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Raleway', sans-serif;
   border-top: 8px solid $layout-alt-color;
   color: $text-color;
   background: #ddd;
@@ -10,38 +18,35 @@ main {
   margin: 0 auto;
   background: white;
   box-shadow: 0px 0px 20px 0px #555;
-}
 
-@media screen and (max-width: $middle) {
-  main {
+  > div {
+    padding: 0 $desktop-page-horizontal-padding;
+
+    @media screen and (max-width: $small) {
+      padding: 0 $desktop-page-horizontal-padding/2;
+    }
+  }
+
+  @media screen and (max-width: $middle) {
     width: 95%;
   }
 }
 
-@media screen and (max-width: $small) {
-  html {
-    font-size: 0.8em;
-  }
-
-  section {
-    padding: 0 $layout-padding/2 !important;
-
-    h2 {
-      padding-left: 35px !important;
-    }
-  }
+p {
+  text-align: justify;
 }
 
 section {
   margin: 2em 0 0 0;
-  padding: 0 $layout-padding;
+  padding: 1em 0;
+  border-top: 2px dotted #BCBCBC;
 
   h2 {
+    text-transform: uppercase;
     position: relative;
     margin: 0;
-    color: $third-color;
-    font-size: 2em;
-    padding-left: 50px;
+    color: $main-title-color;
+    font-size: 1.5em;
 
     &:before {
       color: $first-color;
@@ -59,7 +64,7 @@ section {
 }
 
 a {
-  color: $second-color;
+  color: $link-color;
 }
 
 .clear {

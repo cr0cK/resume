@@ -1,6 +1,6 @@
 header {
   position: relative;
-  padding: 1.5em $layout-padding 0 $layout-padding;
+  padding: $desktop-page-vertical-padding 0;
 
   h1 {
     font-family: 'Inder', sans-serif;
@@ -8,7 +8,7 @@ header {
     padding: 0;
     font-size: 3em;
     line-height: 1em;
-    color: $first-color;
+    color: $main-title-color;
     font-weight: bold;
     text-transform: uppercase;
   }
@@ -17,7 +17,7 @@ header {
     font-family: 'Inder', sans-serif;
     margin: -4px 0 0 0;
     padding: 0;
-    font-size: 2em;
+    font-size: 1.97em;
     font-weight: bold;
     color: silver;
     text-transform: uppercase;
@@ -25,7 +25,7 @@ header {
 
   ul.quick-links {
     position: absolute;
-    top: 27px;
+    top: 1em;
     right: 100px;
     margin: 0;
     padding: 0;
@@ -44,11 +44,11 @@ header {
       }
 
       span {
-        color: $second-color;
+        color: $link-color;
       }
 
       a {
-        color: $second-color;
+        color: $link-color;
         text-decoration: none;
 
         &:hover {
@@ -60,8 +60,8 @@ header {
 
   img.qrcode {
     position: absolute;
-    top: 25px;
-    right: 30px;
+    top: 1em * 1.1;
+    right: 0;
     width: 50px;
     height: 50px;
   }
@@ -69,12 +69,12 @@ header {
   @media screen and (max-width: $middle-small) {
     ul.quick-links {
       position: static;
-      margin: 1em 0;
+      margin: $desktop-page-vertical-padding 0;
     }
   }
 
   @media screen and (max-width: $small) {
-    padding: 1.0em $layout-padding/2 0 $layout-padding/2 !important;
+    padding: $desktop-page-vertical-padding 0 !important;
 
     img.qrcode {
       display: none;
