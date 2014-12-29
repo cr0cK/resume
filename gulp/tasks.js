@@ -59,9 +59,6 @@ tasks.buildSass = function () {
       sourcemap: true
     })
     .pipe(sourcemaps.write())
-    .pipe(postcss([autoprefixer({
-      browsers: ['> 1%', 'last 2 versions', 'Firefox ESR', 'Opera 12.1']
-    })]))
     .pipe(gulp.dest('./www/css'));
 };
 
