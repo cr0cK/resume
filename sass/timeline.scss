@@ -2,25 +2,16 @@ div.timeline {
   position: relative;
   padding: 0.7em 0 0.7em 30px;
   margin: 1.5em 0 0 0.5em;
-  border-left: 10px solid $thread-background-color;
-
-  @media print {
-    border-left: 8px solid $thread-background-color;
-  }
+  border-left: 7px solid $thread-background-color;
 
   &:before {
     @extend %ph-arrow;
-    top: -20px;
-    left: -22px;
+    top: -17px;
+    left: -19px;
     transform: rotate(-90deg);
 
     @media screen and (max-width: $small) {
       left: -19px;
-    }
-
-    @media print {
-      top: -17px;
-      left: -17px;
     }
   }
 
@@ -29,7 +20,7 @@ div.timeline {
     @extend %ph-point;
     position: absolute;
     bottom: -5px;
-    left: -15px;
+    left: -13px;
     background: $thread-background-color;
   }
 
@@ -39,14 +30,13 @@ div.timeline {
     div {
       &.where {
         position: relative;
-        width: 23%;
+        width: 33%;
         min-width: 150px;
         margin: 0 0 10px 0;
         display: inline-block;
         vertical-align: top;
 
         h3 {
-          color: $text-color;
           margin: 0;
           padding: 0;
           position: relative;
@@ -63,16 +53,16 @@ div.timeline {
           @extend %ph-point;
           position: absolute;
           top: 0;
-          left: -45px;
+          left: -43px;
 
           @media print {
-            left: -44px;
+            left: -43px;
           }
         }
       }
 
       &.description {
-        width: 76%;
+        width: 66%;
         display: inline-block;
         vertical-align: top;
 
@@ -80,8 +70,9 @@ div.timeline {
           margin: 0;
           padding: 0;
 
-          span {
-            color: #999;
+          ~ p.school {
+            margin: 0;
+            font-size: smaller;
           }
         }
       }
@@ -94,7 +85,7 @@ div.timeline {
         &.description {
           width: 100%;
           h3 {
-            font-size: 1em;
+            font-size: 1.0em;
           }
         }
       }
