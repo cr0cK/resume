@@ -26,7 +26,7 @@ header {
   ul.quick-links {
     position: absolute;
     top: 27px;
-    right: 15px;
+    right: 100px;
     margin: 0;
     padding: 0;
     line-height: 1.4em;
@@ -58,12 +58,26 @@ header {
     }
   }
 
-  @media screen and (max-width: $small) {
-    padding: 1.5em $layout-padding/2 0 $layout-padding/2 !important;
+  img.qrcode {
+    position: absolute;
+    top: 25px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+  }
 
+  @media screen and (max-width: $middle-small) {
     ul.quick-links {
       position: static;
       margin: 1em 0;
+    }
+  }
+
+  @media screen and (max-width: $small) {
+    padding: 1.0em $layout-padding/2 0 $layout-padding/2 !important;
+
+    img.qrcode {
+      display: none;
     }
   }
 }
