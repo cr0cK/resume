@@ -155,6 +155,7 @@ var Donuts = function () {
       this._build('.apache', 60, 60, '#EA119C', false, 0.9);
       this._build('.varnish', 60, 25, '#73B9E3', true);
       this._build('.haproxy', 60, 25, '#6BF141', true);
+      this._build('.linux', 100, 75, '#6D6D6D', false);
 
     this._build('.collaboration', 90, 80, '#F17D23', false);
       this._build('.github', 80, 85, '#323131', false, 1.2, 1.7);
@@ -165,7 +166,7 @@ var Donuts = function () {
 
     this._build('.father', 150, 98, '#EA94B7', false, 1.2, 0.2);
       this._build('.aikido', 90, 85, '#333', false, 1.2, 1.9);
-      this._build('.bike', 90, 85, '#828BA1', false, 0.8);
+      this._build('.bike', 90, 85, '#828BA1', true, 0.8);
 
     this._build('.french', 90, 100, '#002680', false, 1.2, 1.5);
       this._build('.english', 90, 75, '#D1132C', false, 1.2);
