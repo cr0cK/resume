@@ -12,8 +12,12 @@ section.presentation {
       width: 50%;
     }
 
-    @media screen and (max-width: $middle) {
-      width: 100%;
+    @media screen and (max-width: $middle-small + 50) {
+      width: 100% !important;
+
+      &:last-child {
+        border-top: 1px dotted silver;
+      }
     }
   }
 }
