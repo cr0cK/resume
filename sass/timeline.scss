@@ -1,106 +1,55 @@
-div.timeline {
-  position: relative;
-  padding: 0.7em 0 0.7em 30px;
-  margin: 1.5em 0 0 0.5em;
-  border-left: 7px solid $thread-background-color;
+$timeline-width: 7px;
 
-  &:before {
-    @extend %ph-arrow;
-    top: -17px;
-    left: -19px;
-    transform: rotate(-90deg);
+section.timeline {
+  ul {
+    position: relative;
+    border-left: $timeline-width solid $thread-background-color;
+    margin: 2em 0 0 5px !important;
 
-    @media screen and (max-width: $small) {
+    &:before {
+      @extend %ph-arrow;
+      top: -17px;
       left: -19px;
+      transform: rotate(-90deg);
+    }
+
+    &:after {
+      content: '';
+      @extend %ph-point;
+      position: absolute;
+      bottom: -5px;
+      left: -13px;
+      background: $thread-background-color;
+    }
+
+    li {
+      position: relative;
+      left: -$timeline-width;
+
+      &:first-child {
+        padding-top: 2em;
+      }
+
+      div.first-column {
+        h3 {
+          position: relative;
+
+          &:before {
+            content: '';
+            @extend %ph-point;
+            position: absolute;
+            top: 1px;
+            left: -6px;
+          }
+        }
+      }
     }
   }
 
-  &:after {
-    content: '';
-    @extend %ph-point;
-    position: absolute;
-    bottom: -5px;
-    left: -13px;
-    background: $thread-background-color;
-  }
-
-  > div {
-    margin-top: 10px;
-
-    div {
-      &.where {
-        position: relative;
-        width: 33%;
-        min-width: 150px;
-        margin: 0 0 10px 0;
-        display: inline-block;
-        vertical-align: top;
-
-        h3 {
-          margin: 0;
-          padding: 0;
-          position: relative;
-
-          ~ p {
-            margin: 0;
-            font-size: smaller;
-            color: $alt-text-color;
-          }
-        }
-
-        &:before {
-          content: '';
-          @extend %ph-point;
-          position: absolute;
-          top: 0;
-          left: -43px;
-
-          @media print {
-            left: -43px;
-          }
-        }
-      }
-
-      &.description {
-        width: 66%;
-        display: inline-block;
-        vertical-align: top;
-
-        h3 {
-          margin: 0;
-          padding: 0;
-
-          ~ p.school {
-            margin: 0;
-            font-size: smaller;
-          }
-        }
-      }
-
-      @media screen and (max-width: $middle) {
-        &.where {
-          width: 100%;
-        }
-
-        &.description {
-          width: 100%;
-          h3 {
-            font-size: 1.0em;
-          }
-        }
-      }
-
-      @media print {
-        &.where {
-          width: 100%;
-        }
-
-        &.description {
-          width: 100%;
-          h3 {
-            font-size: 1.0em;
-          }
-        }
+  &.experiences {
+    li {
+      &:last-child {
+        padding-bottom: 2em;
       }
     }
   }

@@ -4,6 +4,13 @@ html {
   @media screen and (max-width: $small) {
     font-size: 0.8em;
   }
+
+  // hack letter spacing in texts for Firefox...
+  @-moz-document url-prefix() {
+    p {
+      letter-spacing: 0;
+    }
+  }
 }
 
 body {
