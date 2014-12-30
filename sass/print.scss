@@ -1,8 +1,9 @@
 body.debug-print {
-  height: 297mm;
-  width: 210mm;
+  width: 210mm !important;
+  // height: 297mm !important;
   margin-left: auto;
   margin-right: auto;
+  // outline: 1px solid #555;
 }
 
 @media print {
@@ -23,15 +24,13 @@ body.debug-print {
   }
 
   html {
-    font-size: 0.75em;
-  }
-
-  p {
-    margin: 0.5em 0;
+    font-size: 0.70em;
   }
 
   body {
-    width: 100% !important;
+    width: 210mm !important;
+    margin-left: auto;
+    margin-right: auto;
     border-top: none;
     background-color: white;
   }
@@ -42,8 +41,21 @@ body.debug-print {
     box-shadow: none;
   }
 
+  h3 {
+    font-size: 1.0em !important;
+  }
+
+  section {
+    margin-top: 0em !important;
+    border-top: none;
+  }
+
   section.presentation {
-    margin-top: 2em;
+    margin-top: 3em !important;
+
+    @-moz-document url-prefix() {
+      margin-top: 0em !important;
+    }
   }
 
   section.experiences, section.education {
@@ -52,21 +64,35 @@ body.debug-print {
   }
 
   section.education {
-    width: 46%;
+    width: 48%;
     padding-right: 0;
   }
 
   section.experiences {
-    width: 46%;
+    width: 50%;
     padding-left: 0;
   }
 
-  section.interests {
+  section.work {
     page-break-before: always;
 
+    li:last-child {
+      margin: 0 !important;
+    }
+  }
+
+  section.interests {
+    height: 640px !important;
+
     .donuts {
+      margin: 60px 0;
       zoom: 0.8 !important;
-      margin-left: 1em;
+      margin-left: 4em;
+
+      @-moz-document url-prefix() {
+        -moz-transform: scale(0.8);
+        margin-left: -5em;
+      }
     }
   }
 
