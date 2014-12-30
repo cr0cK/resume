@@ -129,7 +129,7 @@ var Donuts = function () {
       this._build('.preprocessors', 70, 85, '#DA619B', false);
       this._build('.responsive', 60, 75, '#828282', false);
       this._build('.cordova', 80, 20, '#7bcfd8', true);
-      this._build('.android', 100, 25, '#97C024', true, 1.1);
+      this._build('.android', 100, 15, '#97C024', true, 1.1);
 
     this._build('.python', 80, 75, '#FECD40', true, 1.2);
       this._build('.go', 80, 10, '#D0B799', true, 1.4);
