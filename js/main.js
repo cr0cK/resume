@@ -132,11 +132,12 @@ var Donuts = function () {
       this._build('.android', 100, 15, '#97C024', true, 1.1);
 
     this._build('.python', 80, 75, '#FECD40', true, 1.2);
-      this._build('.go', 80, 10, '#D0B799', true, 1.4);
+      // this._build('.go', 80, 10, '#D0B799', true, 1.4);
+      this._build('.c', 50, 15, '#D0B799', true, 1.4);
       this._build('.perl', 60, 90, '#0b5c8c', false, 1.6, 1);
-      this._build('.php', 60, 85, '#8892BF', true, 1.6);
-      this._build('.net', 40, 20, '#007DB3', false, 0.8);
-      this._build('.java', 50, 20, '#F8272B', false, 0.8);
+      this._build('.php', 60, 75, '#8892BF', true, 1.6);
+      this._build('.net', 40, 15, '#007DB3', false, 0.8);
+      this._build('.java', 50, 15, '#F8272B', false, 0.8);
 
     this._build('.db', 100, 75, '#AAAAAC', true);
       this._build('.mysql', 70, 85, '#2B5A6A', false);
