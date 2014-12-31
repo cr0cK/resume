@@ -21,6 +21,8 @@ body {
 }
 
 main {
+  // IE11 hack
+  display: block;
   width: $middle - 50px;
   margin: 0 auto;
   background: white;

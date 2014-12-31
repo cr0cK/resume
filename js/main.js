@@ -214,6 +214,9 @@ var Donuts = function () {
 };
 
 $(document).ready(function () {
+  // IE11 fix
+  document.createElement('main');
+
   var donuts = new Donuts();
 
   donuts.draw();
