@@ -125,6 +125,7 @@ var Donuts = function () {
 
     this._build('.web', 120, 90, '#26A1FF', false, 1.2);
       this._build('.html5', 80, 85, '#EF6529', false, 1.2);
+      this._build('.svg', 80, 55, '#EEBB0F', false, 1.5);
       this._build('.css3', 90, 85, '#0270BB', false, 1.2);
       this._build('.preprocessors', 70, 85, '#DA619B', false);
       this._build('.responsive', 60, 75, '#828282', false);
@@ -132,7 +133,6 @@ var Donuts = function () {
       this._build('.android', 100, 15, '#97C024', true, 1.1);
 
     this._build('.python', 80, 75, '#FECD40', true, 1.2);
-      // this._build('.go', 80, 10, '#D0B799', true, 1.4);
       this._build('.c', 50, 15, '#D0B799', true, 1.4);
       this._build('.perl', 60, 90, '#0b5c8c', false, 1.6, 1);
       this._build('.php', 60, 75, '#8892BF', true, 1.6);
@@ -165,9 +165,8 @@ var Donuts = function () {
       this._build('.trac', 60, 80, '#B50600', false, 1.6);
       this._build('.kanban', 70, 65, '#edea55', true, 0.9, 1);
 
-    this._build('.father', 150, 98, '#EA94B7', false, 1.2, 0.2);
-      this._build('.aikido', 90, 85, '#333', false, 1.2, 1.9);
-      this._build('.bike', 90, 85, '#828BA1', true, 0.8);
+    this._build('.aikido', 90, 85, '#333', false, 1.2, 1.9);
+      this._build('.bike', 80, 75, '#828BA1', true, 0.8);
 
     this._build('.french', 90, 100, '#002680', false, 1.2, 1.5);
       this._build('.english', 90, 75, '#D1132C', false, 1.2);
