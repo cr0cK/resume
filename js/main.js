@@ -119,9 +119,9 @@ var Donuts = function () {
       this._build('.flux', 90, 25, '#26b0d3', false, 1.2);
       this._build('.isomorphic', 90, 25, '#0e95b7', false, 1.1);
       this._build('.jquery', 70, 95, '#0e95b7', false);
-      this._build('.d3', 75, 60, '#F68E51', '#b76637', 1.4);
+      this._build('.d3', 75, 75, '#F68E51', '#b76637', 1.4);
       this._build('.node', 95, 75, '#80BD01', true);
-      this._build('.gl', 75, 10, '#990000', false);
+      this._build('.gl', 75, 20, '#990000', false);
 
     this._build('.web', 120, 90, '#26A1FF', false, 1.2);
       this._build('.html5', 80, 85, '#EF6529', false, 1.2);
@@ -129,7 +129,7 @@ var Donuts = function () {
       this._build('.css3', 90, 85, '#0270BB', false, 1.2);
       this._build('.preprocessors', 70, 85, '#DA619B', false);
       this._build('.responsive', 60, 75, '#828282', false);
-      this._build('.cordova', 80, 20, '#7bcfd8', true);
+      this._build('.cordova', 80, 15, '#7bcfd8', true);
       this._build('.android', 100, 15, '#97C024', true, 1.1);
 
     this._build('.python', 80, 75, '#FECD40', true, 1.2);
@@ -152,7 +152,7 @@ var Donuts = function () {
     this._build('.devops', 90, 40, '#024164', false, 1.2, 1.4);
       this._build('.docker', 90, 50, '#1FB6E8', false, 1.2);
       this._build('.fig', 75, 50, '#A41212', false, 1.6);
-      this._build('.jenkins', 80, 65, '#AAAAAC', true, 1.2);
+      this._build('.jenkins', 80, 75, '#AAAAAC', true, 1.2);
       this._build('.apache', 60, 60, '#EA119C', false, 0.9);
       this._build('.varnish', 60, 25, '#73B9E3', true);
       this._build('.haproxy', 60, 25, '#6BF141', true);
