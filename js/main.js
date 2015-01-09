@@ -119,8 +119,10 @@ var Donuts = function () {
       this._build('.flux', 90, 25, '#26b0d3', false, 1.2);
       this._build('.isomorphic', 90, 25, '#0e95b7', false, 1.1);
       this._build('.jquery', 70, 95, '#0e95b7', false);
-      this._build('.d3', 75, 75, '#F68E51', '#b76637', 1.4);
+      this._build('.d3', 70, 65, '#F68E51', true, 1.3);
       this._build('.node', 95, 75, '#80BD01', true);
+      this._build('.lodash', 70, 75, '#1C823A');
+      this._build('.gulp', 70, 75, '#EB4A4B');
       this._build('.gl', 75, 20, '#990000', false);
 
     this._build('.web', 120, 90, '#26A1FF', false, 1.2);
