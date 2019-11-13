@@ -2,18 +2,14 @@
   box-sizing: border-box;
 }
 
-html {
-  height: 100%;
-}
-
 body {
   font-family: 'Raleway';
   font-size: 0.9em;
 
+  line-height: 1.5em;
+
   display: flex;
   justify-content: center;
-
-  height: 100%;
 
   background: rgb(194, 194, 194);
   background: radial-gradient(
@@ -22,96 +18,89 @@ body {
     rgba(118, 118, 118, 1) 100%
   );
 
-  padding: @sp-marginLarge 0;
+  padding: @sp-paddingExtraLarge 0;
 }
 
 main {
-  width: 1000px;
-  height: 100%;
-  min-height: 800px;
-
   display: flex;
-
+  width: 1000px;
   border: 1px solid @c-lightGrey;
 
-  position: relative;
+  .page-shadow;
+}
 
-  &:before,
-  &:after {
-    z-index: -1;
-    position: absolute;
-    content: '';
-    bottom: 15px;
-    left: 10px;
-    width: 50%;
-    top: 80%;
-    max-width: 500px;
-    box-shadow: 0 20px 10px rgb(80, 80, 80);
-    transform: rotate(-3deg);
-  }
-  &:after {
-    transform: rotate(3deg);
-    right: 10px;
-    left: auto;
+header {
+  margin-bottom: @sp-marginLarge;
+
+  h2 {
+    font-weight: 200;
   }
 }
 
 section {
+  padding: @sp-paddingMedium;
+
+  article {
+    margin-bottom: @sp-marginLarge;
+  }
+
+  a {
+    color: white;
+    text-decoration: underline;
+
+    &:hover {
+      color: @c-light-green;
+    }
+  }
+
   &#summary {
     width: 30%;
     background: @c-darkGrey;
     color: @c-white;
 
-    padding: @sp-marginMedium;
+    header {
+      text-align: center;
+
+      img.photo {
+        width: 150px;
+        border-radius: 50%;
+        border: 2px solid #5b757c;
+      }
+    }
+
+    h3 {
+      margin: 0 0 1em 0;
+      padding: 0;
+      text-transform: uppercase;
+
+      span {
+        color: @c-light-green;
+        font-weight: 400;
+      }
+    }
   }
 
   &#content {
-    width: 70%;
+    width: 71%;
     background: @c-white;
     color: @c-darkGrey;
-  }
 
-  h3 {
-    padding-top: 1.5em;
-  }
+    article {
+      margin-bottom: @sp-marginLarge;
+    }
 
-  ul {
-    padding: 0;
+    h3 {
+      margin: 0 0 @sp-paddingMedium 0;
+      padding: 0;
+      text-align: right;
+      font-size: 1.8em;
+      text-transform: uppercase;
 
-    li {
-      padding-left: 30px;
-      list-style: none;
-      line-height: 1.8em;
+      span {
+        color: @c-light-green;
+        font-weight: 400;
+      }
     }
   }
 }
 
-section#summary {
-  header {
-    text-align: center;
-
-    img.photo {
-      width: 150px;
-      border-radius: 50%;
-      border: 2px solid #5b757c;
-    }
-  }
-}
-
-section#content {
-  padding: @sp-marginSmall;
-
-  overflow-y: scroll;
-
-  h3 {
-    margin: 0;
-    padding: @sp-marginMedium 0;
-  }
-
-  ul {
-    li {
-      line-height: 1.4em;
-      list-style: circle;
-    }
-  }
-}

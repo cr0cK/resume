@@ -1,0 +1,34 @@
+/* Lists */
+
+ul {
+  margin: 0;
+  padding: 0;
+
+  li {
+    margin: 0px;
+    padding: 0;
+    list-style: none;
+
+    h4 {
+      display: inline;
+    }
+  }
+
+  &.bullets {
+    margin-bottom: @sp-marginMedium;
+
+    li {
+      &::before {
+        content: '- ';
+      }
+    }
+  }
+}
+
+/* Icons */
+
+i {
+  &.fab {
+    width: 25px;
+  }
+}

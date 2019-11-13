@@ -1,0 +1,22 @@
+.page-shadow() {
+  position: relative;
+
+  &:before,
+  &:after {
+    z-index: -1;
+    position: absolute;
+    content: '';
+    bottom: 15px;
+    left: 20px;
+    width: 50%;
+    top: 80%;
+    max-width: 500px;
+    box-shadow: 0 20px 10px rgb(80, 80, 80);
+    transform: rotate(-3deg);
+  }
+  &:after {
+    transform: rotate(3deg);
+    right: 20px;
+    left: auto;
+  }
+}
