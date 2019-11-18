@@ -1,0 +1,45 @@
+@color-bullist: #2A4046;
+
+article#experiences, article#education {
+  > ul {
+    & > li {
+      position: relative;
+      padding-left: 120px;
+
+      &:before {
+        content: '';
+        position: absolute;
+        z-index: 2;
+        top: 6px;
+        left: 94px;
+        height: 9px;
+        width: 9px;
+        background: @color-bullist;
+        border: 1px solid @color-bullist;
+        border-radius: 50%;
+      }
+
+      &:after {
+        content: '';
+        position: absolute;
+        z-index: 1;
+        top: 12px;
+        left: 99px;
+        height: 115%;
+        border-left: 1px solid silver;
+      }
+
+      &:last-child {
+        &:after {
+          height: 100%;
+        }
+      }
+
+      .date {
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+    }
+  }
+}
